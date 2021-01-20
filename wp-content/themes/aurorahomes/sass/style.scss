@@ -22,81 +22,97 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
+@import '../fonts.css';
 
---------------------------------------------------------------*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
+@import '~swiper/swiper-bundle.css';
 
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
+html, body {
+  @apply relative h-full;
+}
 
-/* Normalize
---------------------------------------------- */
-@import "generic/normalize";
+.menu-menu-1-container {
+  @apply flex items-center;
 
-/* Box sizing
---------------------------------------------- */
-@import "generic/box-sizing";
+  .menu {
+    @apply flex items-center;
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
+    .menu-item {
+      @apply px-12;
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+      a {
+        @apply font-normal text-xl text-white;
+      }
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
+      &.active {
+        a {
+          @apply font-black;
+        }
+      }
+    }
+  }
+}
 
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
+.mobile {
+  .menu-menu-1-container {
+    @apply flex justify-center;
 
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+    .menu {
+      @apply flex flex-col;
 
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
+      .menu-item {
+        @apply py-4;
 
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
+        a {
+          @apply font-normal text-xl text-white;
+        }
 
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+        &.active {
+          a {
+            @apply font-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-work-swiper-container {
+  @apply relative;
+
+  &:before {
+    content: ' ';
+    background-image: url('/wp-content/themes/aurorahomes/images/Path 1994.png');
+    @apply absolute h-full top-0 -left-0.5 bg-contain bg-no-repeat bg-left-top z-40;
+    width: 50px;
+  }
+
+  &:after {
+    content: ' ';
+    background-image: url('/wp-content/themes/aurorahomes/images/Path 1993.png');
+    @apply absolute h-full top-0 -right-0.5 bg-contain bg-no-repeat bg-right-top z-40;
+    width: 50px;
+  }
+}
+
+.wpcf7 {
+  input[type="text"], input[type="email"], textarea {
+    @apply border border-aurora-grey-01 bg-white py-3 px-4 mb-4 w-full;
+
+    &.wpcf7-captchar {
+      @apply w-32;
+    }
+  }
+
+  select, {
+    @apply border border-aurora-grey-01 bg-white py-4 px-4 mb-4 w-full;
+  }
+
+  input[type="submit"] {
+    @apply bg-aurora-blue-02 px-8 py-2 rounded-full font-light text-white mb-4;
+  }
+}

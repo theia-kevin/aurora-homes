@@ -1,34 +1,35 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Aurora_Homes
- */
-
-?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aurorahomes' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'aurorahomes' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'aurorahomes' ), 'aurorahomes', '<a href="http://kevinlim.net">Kevin Lim</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
-
+<div class="relative h-5/6 lg:h-3/6 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/Rectangle 156.png' ); ?>');">
+    <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
+    <div class="absolute h-3/6 w-full -top-4 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1985.png' ); ?>');">
+    </div>
+    <div class="absolute inset-0 container mx-auto lg:mb-12 px-4 lg:px-0 flex flex-col justify-end z-40">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-between">
+                <a class="block mb-4 lg:mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src="<?php echo get_theme_file_uri( '/images/Group 198.png' ); ?>" alt="">
+                </a>
+                <p class="font-light text-white mb-4 lg:mb-0">© COPYRIGHT 2020 AURORA HOMES LIMITED. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="col-span-12 lg:col-span-2 flex flex-col mb-4 lg:mb-0">
+                <p class="font-bold text-xl text-white mb-4">Links</p>
+			    <?php
+			    foreach ( wp_get_nav_menu_items( 'menu-1' ) as $menu ) {
+				    ?>
+                    <a class="inline-block font-light text-xl text-white" href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+				    <?php
+			    }
+			    ?>
+            </div>
+            <div class="col-span-12 lg:col-span-6 flex flex-col mb-4 lg:mb-0">
+                <p class="font-bold text-xl text-white mb-4">Contact</p>
+                <p class="inline-block font-light text-xl text-white">Email: info@auroradevelopment.co.nz</p>
+                <p class="inline-block font-light text-xl text-white">Phone: +64 (0)21 806 699</p>
+                <p class="inline-block font-light text-xl text-white mb-4">Office: 118 Lincoln Road, Henderson, Auckland, AKL 0610</p>
+                <img class="self-start" src="<?php echo get_theme_file_uri( '/images/Group 322.png' ); ?>" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
