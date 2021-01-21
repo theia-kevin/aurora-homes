@@ -1,7 +1,19 @@
 <?php wp_footer(); ?>
-<div class="relative h-5/6 lg:h-3/6 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/Rectangle 156.png' ); ?>');">
+
+<?php
+    if ( is_page( 'Home' ) ) {
+        $background = get_theme_file_uri( '/images/Rectangle 156.png' );
+	    $background_position = 'bg-center';
+    }
+
+    if ( is_page( 'About' ) ) {
+        $background = get_theme_file_uri( '/images/dMHxYa.png' );
+        $background_position = 'bg-left-bottom';
+    }
+?>
+<div class="relative h-5/6 lg:h-3/6 bg-cover bg-no-repeat <?php echo $background_position; ?>" style="background-image: url('<?php echo $background; ?>');">
     <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-    <div class="absolute h-3/6 w-full -top-4 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1985.png' ); ?>');">
+    <div class="absolute h-2/6 lg:h-3/6 w-full -top-4 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1985.png' ); ?>');">
     </div>
     <div class="absolute inset-0 container mx-auto lg:mb-12 px-4 lg:px-0 flex flex-col justify-end z-40">
         <div class="grid grid-cols-12">

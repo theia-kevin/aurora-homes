@@ -8,22 +8,19 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="absolute inset-0 h-36 z-50 hidden lg:flex items-center justify-between">
+<header class="absolute inset-0 h-36 z-50 hidden lg:flex items-center justify-between mx-0 lg:mx-8">
 	<?php
 	if ( is_page( 'Home' ) ) {
-		?>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img src="<?php echo get_theme_file_uri( '/images/Group 198.png' ); ?>" alt="">
-        </a>
-		<?php
-	} else {
-		?>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img src="<?php echo get_theme_file_uri( '/images/Group 258.png' ); ?>" alt="">
-        </a>
-		<?php
+		$logo = get_theme_file_uri( '/images/Group 198.png' );
+	}
+
+	if ( is_page( 'About' ) ) {
+		$logo = get_theme_file_uri( '/images/Group 198.png' );
 	}
 	?>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <img src="<?php echo $logo; ?>" alt="">
+    </a>
 	<?php
 	wp_nav_menu(
 		array(
@@ -33,7 +30,7 @@
 	);
 	?>
 </header>
-<header class="mobile absolute inset-0 h-36 z-50 flex lg:hidden items-center justify-between mx-4" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
+<header class="mobile absolute inset-0 h-36 z-50 flex lg:hidden items-center justify-between mx-4 lg:mx-8" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
 	<?php
 	if ( is_page( 'Home' ) ) {
 		?>

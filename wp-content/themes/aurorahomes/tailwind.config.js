@@ -33,6 +33,9 @@ module.exports = {
           'aurora-grey-01': {
             DEFAULT: '#4D4D4D',
           },
+          'aurora-grey-02': {
+            DEFAULT: '#333333',
+          }
         },
         backgroundColor: {
           ...defaultColors,
@@ -64,6 +67,9 @@ module.exports = {
             'aurora-grey-01': {
               DEFAULT: '#4D4D4D',
             },
+            'aurora-grey-02': {
+              DEFAULT: '#333333',
+            }
           },
         },
         borderColor: {
@@ -96,6 +102,9 @@ module.exports = {
             'aurora-grey-01': {
               DEFAULT: '#4D4D4D',
             },
+            'aurora-grey-02': {
+              DEFAULT: '#333333',
+            }
           },
         },
       },

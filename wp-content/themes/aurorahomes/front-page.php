@@ -16,7 +16,7 @@ get_header();
     <div class="container mx-auto px-4 lg:px-0 mb-0 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-5 flex flex-col justify-center text-right mb-12 lg:mb-0 order-2 lg:order-1">
-                <p class="font-light mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                <p class="font-light text-aurora-grey-02 mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
                     quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea Lorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -39,7 +39,7 @@ get_header();
                     CONSECTETUER</p>
             </div>
             <div class="col-span-12 row-start-2 lg:col-start-7 lg:col-span-6 flex flex-col mb-12 lg:mb-0">
-                <p class="font-light mb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                <p class="font-light text-aurora-grey-02 mb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
                     quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea Lorem ipsum dolor sit
                     amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -49,9 +49,9 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="bg-contain bg-no-repeat bg-left-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1986.png' ); ?>')">
-        <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0">
-            <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 mb-0 lg:mb-36">
+    <div class="relative bg-contain bg-no-repeat bg-left-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1986.png' ); ?>')">
+        <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0 relative z-40">
+            <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 pb-0 lg:pb-24 mb-0 lg:mb-36">
                 <div class="col-start-1 row-start-1 col-span-1">
                     <img class="w-full" src="<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>" alt="">
                 </div>
@@ -68,6 +68,8 @@ get_header();
                     <img class="w-full" src="<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>" alt="">
                 </div>
             </div>
+        </div>
+        <div class="absolute bottom-0 h-4/6 w-full bg-aurora-blue-03 bg-opacity-30 bg-contain bg-no-repeat z-30" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1986.png' ); ?>');">
         </div>
     </div>
     <div x-data="{ tab: 'completed' }">
