@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
 <?php
-    if ( is_page( 'Home' ) ) {
+    if ( is_page( 'Home' ) || is_page( 'Contact' )) {
         $background = get_theme_file_uri( '/images/Rectangle 156.png' );
 	    $background_position = 'bg-center';
     }
@@ -11,10 +11,10 @@
         $background_position = 'bg-left-bottom';
     }
 
-if ( is_page( 'Services' ) ) {
-	$background = get_theme_file_uri( '/images/bBYUUe.png' );
-	$background_position = 'bg-left-bottom';
-}
+    if ( is_page( 'Services' ) ) {
+        $background = get_theme_file_uri( '/images/bBYUUe.png' );
+        $background_position = 'bg-left-bottom';
+    }
 ?>
 <div class="relative h-5/6 lg:h-3/6 bg-cover bg-no-repeat <?php echo $background_position; ?>" style="background-image: url('<?php echo $background; ?>');">
     <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>

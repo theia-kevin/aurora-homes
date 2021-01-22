@@ -153,6 +153,11 @@ function aurorahomes_scripts() {
 			_S_VERSION, true);
 	}
 
+	if (is_page('Contact')) {
+		wp_enqueue_script('aurorahomes-page-contact', get_template_directory_uri() . '/page-contact.js', array(),
+			_S_VERSION, true);
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
