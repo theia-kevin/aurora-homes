@@ -29,5 +29,4 @@ node_modules/
 # ignore phpstorm files
 .idea
 
-# ignore wp-config.php
-wp-config.php
+
