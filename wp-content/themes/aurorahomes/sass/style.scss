@@ -29,7 +29,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @tailwind utilities;
 @tailwind screens;
 
-@import '~swiper/swiper-bundle.css';
+@import '~swiper/swiper-bundle.min.css';
+@import '~simple-lightbox/dist/simpleLightbox.min.css';
 
 html, body {
   @apply relative h-full;

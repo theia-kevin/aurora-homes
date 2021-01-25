@@ -49,7 +49,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="relative bg-contain bg-no-repeat bg-left-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1986.png' ); ?>')">
+    <div class="relative">
         <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0 relative z-40">
             <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 pb-12 lg:pb-24 mb-0 lg:mb-36">
                 <div class="col-start-1 row-start-1 col-span-1">

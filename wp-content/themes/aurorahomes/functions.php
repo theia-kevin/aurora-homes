@@ -164,6 +164,11 @@ function aurorahomes_scripts() {
 
 	wp_enqueue_script( 'aurorahomes-app', get_template_directory_uri() . '/app.js', array(),
 		_S_VERSION, true );
+
+	if (is_singular('project') && ( get_post_type() == 'project' )) {
+		wp_enqueue_script('tsqdevelopment-single-project', get_template_directory_uri() . '/single-project.js', array(),
+			_S_VERSION, true);
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'aurorahomes_scripts' );

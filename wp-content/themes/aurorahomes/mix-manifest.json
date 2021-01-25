@@ -6,5 +6,7 @@
     "/front-page.js": "/front-page.js",
     "/front-page.js.map": "/front-page.js.map",
     "/page-contact.js": "/page-contact.js",
-    "/page-contact.js.map": "/page-contact.js.map"
+    "/page-contact.js.map": "/page-contact.js.map",
+    "/single-project.js": "/single-project.js",
+    "/single-project.js.map": "/single-project.js.map"
 }

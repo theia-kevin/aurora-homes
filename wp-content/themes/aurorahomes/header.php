@@ -10,8 +10,12 @@
 <?php wp_body_open(); ?>
 <header class="absolute inset-0 h-36 z-50 hidden lg:flex items-center justify-between mx-0 lg:mx-8">
 	<?php
-	if ( is_page( 'Home' ) || is_page( 'About' ) || is_page('Services') || is_page('Contact')) {
+	if ( is_page( 'Home' ) || is_page( 'About' ) || is_page( 'Services' ) || is_page( 'Contact' ) ) {
 		$logo = get_theme_file_uri( '/images/Group 198.png' );
+	}
+
+	if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) ) ) {
+		$logo = get_theme_file_uri( '/images/Group 258.png' );
 	}
 	?>
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
