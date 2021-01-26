@@ -4,25 +4,21 @@
 if ( is_page( 'Home' ) || is_page( 'Contact' ) ) {
 	$background          = get_theme_file_uri( '/images/Rectangle 156.png' );
 	$background_position = 'bg-center';
-	$logo = get_theme_file_uri( '/images/Group 198.png' );
 }
 
 if ( is_page( 'About' ) ) {
 	$background          = get_theme_file_uri( '/images/dMHxYa.png' );
 	$background_position = 'bg-left-bottom';
-	$logo = get_theme_file_uri( '/images/Group 198.png' );
 }
 
 if ( is_page( 'Services' ) ) {
 	$background          = get_theme_file_uri( '/images/bBYUUe.png' );
 	$background_position = 'bg-left-bottom';
-	$logo = get_theme_file_uri( '/images/Group 198.png' );
 }
 
 if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) ) {
 	$background          = get_theme_file_uri( '/images/m8DVH7.png' );
 	$background_position = 'bg-left-bottom';
-	$logo = get_theme_file_uri( '/images/Group 124.png' );
 }
 ?>
 <div class="relative h-5/6 lg:h-3/6 bg-cover bg-no-repeat <?php echo $background_position; ?>" style="background-image: url('<?php echo $background; ?>');">
@@ -31,14 +27,14 @@ if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) 
     </div>
     <div class="absolute inset-0 container mx-auto lg:mb-12 px-4 lg:px-0 flex flex-col justify-end z-40">
         <div class="grid grid-cols-12">
-            <div class="col-span-12 lg:col-span-4 flex flex-col justify-between">
+            <div class="col-span-12 lg:col-span-5 flex flex-col justify-between">
                 <a class="block mb-4 lg:mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <img src="<?php echo $logo; ?>" alt="">
+                    <img src="<?php echo get_theme_file_uri('/images/cropped-cropped-Asset-1-2.png'); ?>" alt="">
                 </a>
                 <p class="font-light text-white mb-4 lg:mb-0">© COPYRIGHT 2020 AURORA HOMES LIMITED. ALL RIGHTS
                     RESERVED.</p>
             </div>
-            <div class="col-span-12 lg:col-span-2 flex flex-col mb-4 lg:mb-0">
+            <div class="col-span-12 lg:col-span-3 flex flex-col mb-4 lg:mb-0">
                 <p class="font-bold text-xl text-white mb-4">Links</p>
 				<?php
 				foreach ( wp_get_nav_menu_items( 'menu-1' ) as $menu ) {
@@ -48,7 +44,7 @@ if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) 
 				}
 				?>
             </div>
-            <div class="col-span-12 lg:col-span-6 flex flex-col mb-4 lg:mb-0">
+            <div class="col-span-12 lg:col-span-4 flex flex-col mb-4 lg:mb-0">
                 <p class="font-bold text-xl text-white mb-4">Contact</p>
                 <p class="inline-block font-light text-xl text-white">Email: info@auroradevelopment.co.nz</p>
                 <p class="inline-block font-light text-xl text-white">Phone: +64 (0)21 806 699</p>

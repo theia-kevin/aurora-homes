@@ -8,18 +8,9 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="absolute inset-0 h-36 z-50 hidden lg:flex items-center justify-between mx-0 lg:mx-8">
-	<?php
-	if ( is_page( 'Home' ) || is_page( 'About' ) || is_page( 'Services' ) || is_page( 'Contact' ) ) {
-		$logo = get_theme_file_uri( '/images/Group 198.png' );
-	}
-
-	if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) ) ) {
-		$logo = get_theme_file_uri( '/images/Group 258.png' );
-	}
-	?>
+<header class="absolute container mx-auto inset-0 h-36 z-50 hidden lg:flex items-end justify-between">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img src="<?php echo $logo; ?>" alt="">
+        <img src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>
 	<?php
 	wp_nav_menu(
@@ -30,17 +21,9 @@
 	);
 	?>
 </header>
-<header class="mobile absolute inset-0 h-36 z-50 flex lg:hidden items-center justify-between mx-4 lg:mx-8" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
-	<?php
-	if ( is_page( 'Home' ) || is_page( 'About' ) || is_page( 'Services' ) ) {
-		$logo = get_theme_file_uri( '/images/Group 198.png' );
-	} else {
-		$logo = get_theme_file_uri( '/images/Group 258.png' );
-
-	}
-	?>
+<header class="container mx-auto mt-4 mobile absolute inset-0 h-36 z-50 flex lg:hidden items-end justify-between" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img src="<?php echo $logo; ?>" alt="">
+        <img src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>
     <div class="cursor-pointer mr-4" @click.stop="sidebarOpen = true">
         <img src="<?php echo get_theme_file_uri( '/images/breadcrumb.png' ); ?>" alt="">

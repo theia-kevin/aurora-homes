@@ -6,9 +6,9 @@ get_header();
         <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
-            <p class="font-bold text-5xl text-aurora-orange-01 uppercase mb-8">We Are</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase">Building For</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase mb-8">Your Dream</p>
+            <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase">Building For</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Your Dream</p>
             <a class="self-start bg-aurora-red-01 px-8 py-2 rounded-full font-light text-white" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact
                 Us</a>
         </div>
@@ -53,19 +53,19 @@ get_header();
         <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0 relative z-40">
             <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 pb-12 lg:pb-24 mb-0 lg:mb-36">
                 <div class="col-start-1 row-start-1 col-span-1">
-                    <img class="w-full" src="<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>" alt="">
+                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>" alt="">
                 </div>
                 <div class="col-start-2 row-start-1 col-span-1">
-                    <img class="w-full" src="<?php echo get_theme_file_uri( '/images/mVDpx8.png' ); ?>" alt="">
+                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/mVDpx8.png' ); ?>" alt="">
                 </div>
                 <div class="col-start-2 row-start-2 col-span-1">
-                    <img class="w-full" src="<?php echo get_theme_file_uri( '/images/hprdFP.png' ); ?>" alt="">
+                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/hprdFP.png' ); ?>" alt="">
                 </div>
                 <div class="col-start-3 row-start-2 col-span-1">
-                    <img class="w-full" src="<?php echo get_theme_file_uri( '/images/beWVMU.png' ); ?>" alt="">
+                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/beWVMU.png' ); ?>" alt="">
                 </div>
                 <div class="col-start-2 row-start-3 col-span-1">
-                    <img class="w-full" src="<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>" alt="">
+                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>" alt="">
                 </div>
             </div>
         </div>

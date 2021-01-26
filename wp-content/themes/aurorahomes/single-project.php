@@ -11,7 +11,7 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
     <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-48">
         <div class="grid grid-cols-12">
             <div class="col-span-12 flex flex-wrap items-center justify-between">
-                <div class="mb-8">
+                <div class="mb-16">
                     <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase"><?php echo get_the_title(); ?></p>
                     <p class="font-black leading-tight text-3xl text-aurora-blue-03 uppercase"><?php the_field( 'location' ); ?></p>
                 </div>
@@ -20,14 +20,14 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
                     <img class="ml-4" src="<?php echo get_theme_file_uri( '/images/right-arrow.png' ); ?>" alt="">
                 </a>
             </div>
-            <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
+            <div class="col-span-12 lg:col-span-7 flex flex-col justify-center">
                 <p class="mb-4"><span class="font-bold leading-tight text-lg text-black">Year:</span>
                     <span class="font-light text-aurora-grey-02"><?php the_field( 'year' ); ?></span></p>
                 <p class="mb-4"><span class="font-bold leading-tight text-lg text-black">Status:</span>
                     <span class="font-light text-aurora-grey-02"><?php echo $status; ?></span></p>
                 <p class="mb-12"><span class="font-bold leading-tight text-lg text-black">Client:</span>
                     <span class="font-light text-aurora-grey-02"><?php the_field( 'client' ); ?></span></p>
-                <p class="w-3/5 mb-20 font-light text-aurora-grey-02"><?php the_field( 'description' ); ?></p>
+                <p class="w-4/5 mb-20 font-light text-aurora-grey-02"><?php the_field( 'description' ); ?></p>
                 <div class="flex mb-20">
                     <a class="bg-aurora-blue-03 px-8 py-2 rounded-full font-light text-white mr-4" href="<?php echo get_permalink( get_page_by_title( 'Projects' ) ); ?>">Back
                         to Projects</a>
@@ -35,7 +35,7 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
                         Us</a>
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-6">
+            <div class="col-span-12 lg:col-span-5">
                 <div class="grid grid-cols-12 gap-4">
                     <div class="col-span-12">
                         <div class="swiper-container swiper-primary">
@@ -43,7 +43,7 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
 								<?php
 								foreach ( get_field( 'exterior' ) as $exterior_image ) {
 									?>
-                                    <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 500px; background-image: url('<?php echo $exterior_image; ?>');">
+                                    <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 400px; background-image: url('<?php echo $exterior_image; ?>');">
                                     </div>
 								<?php } ?>
                             </div>

@@ -102,7 +102,7 @@ html, body {
 
 .wpcf7 {
   input[type="text"], input[type="email"], textarea {
-    @apply border border-aurora-grey-01 bg-white py-3 px-4 mb-4 w-full;
+    @apply border border-aurora-grey-01 bg-white py-3 px-4 mb-5 w-full;
 
     &.wpcf7-captchar {
       @apply w-32;
@@ -110,10 +110,10 @@ html, body {
   }
 
   select, {
-    @apply border border-aurora-grey-01 bg-white py-4 px-4 mb-4 w-full;
+    @apply border border-aurora-grey-01 bg-white py-4 px-4 mb-5 w-full;
   }
 
   input[type="submit"] {
-    @apply bg-aurora-blue-02 px-8 py-2 rounded-full font-light text-white;
+    @apply bg-aurora-blue-02 px-8 py-1 rounded-full font-light text-white;
   }
 }

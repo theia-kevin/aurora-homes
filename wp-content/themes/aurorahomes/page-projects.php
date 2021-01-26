@@ -6,9 +6,9 @@ get_header();
         <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
-            <p class="font-bold text-5xl text-aurora-orange-01 uppercase mb-8">We Are</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase">Lorem Ipsum</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase mb-8">Dolor Sit</p>
+            <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase">Lorem Ipsum</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Dolor Sit</p>
             <a class="self-start bg-aurora-red-01 px-8 py-2 rounded-full font-light text-white" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact
                 Us</a>
         </div>
@@ -37,7 +37,7 @@ get_header();
 				while ( $completed_projects->have_posts() ) {
 					$completed_projects->the_post();
 					?>
-                    <div class="col-span-12 lg:col-span-6">
+                    <div class="col-span-12 lg:col-span-5">
                         <a href="<?php the_permalink(); ?>" class="block relative" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
                             <div class="bg-aurora-blue-02 bg-opacity-50 absolute inset-0 z-30" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                             </div>
@@ -67,7 +67,7 @@ get_header();
         </div>
         <div class="grid grid-cols-12 gap-0 gap-y-16 lg:gap-y-32 lg:gap-x-16">
 	        <?php
-	        $completed_projects = new WP_Query( [
+	        $wip_projects = new WP_Query( [
 		        'post_type' => 'project',
 		        'tax_query' => [
 			        [
@@ -77,10 +77,10 @@ get_header();
 			        ]
 		        ]
 	        ] );
-	        while ( $completed_projects->have_posts() ) {
-		        $completed_projects->the_post();
+	        while ( $wip_projects->have_posts() ) {
+		        $wip_projects->the_post();
 		        ?>
-                <div class="col-span-12 lg:col-span-6">
+                <div class="col-span-12 lg:col-span-5">
                     <a href="<?php the_permalink(); ?>" class="block relative" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
                         <div class="bg-aurora-blue-02 bg-opacity-50 absolute inset-0 z-30" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                         </div>
@@ -99,7 +99,7 @@ get_header();
     </div>
     <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-24">
         <div class="flex flex-wrap justify-between items-center">
-            <p class="font-black leading-tight text-6xl text-aurora-blue-04 uppercase">LOREM IPSUM DOLOR SIT AMET,
+            <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">LOREM IPSUM DOLOR SIT AMET,
                 CONSEC</p>
             <a class="bg-aurora-red-01 px-8 py-2 rounded-full font-light text-white my-4" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact
                 Us</a>

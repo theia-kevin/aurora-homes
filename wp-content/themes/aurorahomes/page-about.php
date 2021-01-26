@@ -6,9 +6,9 @@ get_header();
         <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
-            <p class="font-bold text-5xl text-aurora-blue-03 uppercase mb-8">We Are</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase">Prioritising</p>
-            <p class="font-black text-5xl lg:text-8xl text-white uppercase mb-8">Your Needs</p>
+            <p class="font-bold text-4xl text-aurora-blue-03 uppercase mb-8">We Are</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase">Prioritising</p>
+            <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Your Needs</p>
             <a class="self-start bg-aurora-blue-03 px-8 py-2 rounded-full font-light text-white" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact
                 Us</a>
         </div>
@@ -19,7 +19,7 @@ get_header();
                 <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/vhWtDf.png' ); ?>" alt="">
                 <img class="absolute -bottom-12 left-12 2xl:-left-12" src="<?php echo get_theme_file_uri( '/images/Group 183.png' ); ?>" alt="">
             </div>
-            <div class="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col justify-end items-start mt-12 lg:mt-0">
+            <div class="col-span-12 lg:col-span-6 lg:col-start-8 flex flex-col justify-end items-start mt-12 lg:mt-0">
                 <p class="font-black leading-tight text-4xl lg:text-6xl text-aurora-blue-03 uppercase">AURORA PROMISES</p>
                 <p class="font-black leading-tight text-4xl lg:text-6xl text-aurora-blue-03 uppercase">TO BUILD YOUR DREAM</p>
                 <p class="font-black leading-tight text-4xl lg:text-6xl text-aurora-blue-03 uppercase">BUILDING WITH OUR</p>
@@ -28,7 +28,7 @@ get_header();
         </div>
     </div>
     <div class="container mx-auto px-4 lg:px-0">
-        <div class="grid grid-cols-12 lg:gap-x-12">
+        <div class="grid grid-cols-12 lg:gap-x-20">
             <div class="col-span-12">
                 <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase mb-8">About Us</p>
             </div>
