@@ -16,7 +16,7 @@ get_header();
     <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-5 mb-24 2xl:mb-0 relative">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/2NjSSe.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/ladder.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 left-12 2xl:-left-12" src="<?php echo get_theme_file_uri( '/images/Group 142.png' ); ?>" alt="">
             </div>
             <div class="col-span-12 2xl:col-span-7 2xl:col-start-8 2xl:col-end-12">

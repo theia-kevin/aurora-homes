@@ -28,7 +28,7 @@ get_header();
                 <p class="font-bold text-2xl text-aurora-blue-03 uppercase">About Us</p>
                 <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase mb-8">LOREM IPSUM DOLOR SIT
                     AMET, CONSECTETUER</p>
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/4AYn5D.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-8 right-8 2xl:-right-8" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
             </div>
         </div>

@@ -16,7 +16,7 @@ get_header();
     <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-5 relative">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/vhWtDf.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/site.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 left-12 2xl:-left-12" src="<?php echo get_theme_file_uri( '/images/Group 183.png' ); ?>" alt="">
             </div>
             <div class="col-span-12 lg:col-span-6 lg:col-start-8 flex flex-col justify-end items-start mt-12 lg:mt-0">
@@ -128,7 +128,7 @@ get_header();
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6">
-                <img class="object-contain w-full" src="<?php echo get_theme_file_uri('/images/CZLtt8.png') ?>" alt="">
+                <img class="object-contain w-full" src="<?php echo get_theme_file_uri('/images/helmet.jpg') ?>" alt="">
             </div>
         </div>
     </div>
