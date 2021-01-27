@@ -1,9 +1,9 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-4/6 lg:h-5/6 mb-12 lg:mb-36 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/bBYUUe.png' ); ?>');">
+    <div class="relative h-full mb-12 lg:mb-36 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header3_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-        <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
+        <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-yellow-01 uppercase mb-8">We Are</p>
@@ -41,7 +41,7 @@ get_header();
                 <p class="font-light text-aurora-grey-02 mb-4">To ensure quality and continuity through all our projects, we secure all our materials through a range of local New Zealand building suppliers. We strive for high-quality builds and interior finishes. Our company undertakes various types of residential construction, such as Single, Duplex, Townhouse, as well as commercial construction.</p>
             </div>
             <div class="col-span-12 2xl:col-span-5 2xl:col-start-7 2xl:col-end-11 mb-12 2xl:mb-0 relative">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/mVDpx8-ori.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/construction_resized.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 right-12 2xl:-right-12" src="<?php echo get_theme_file_uri( '/images/Group 175.png' ); ?>" alt="">
             </div>
         </div>
@@ -49,7 +49,7 @@ get_header();
     <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4 2xl:col-start-2 2xl:col-end-6 mb-12 2xl:mb-0 relative order-2 2xl:order-1">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/hprdFP-ori.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/development_resized.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 left-12 2xl:-left-12" src="<?php echo get_theme_file_uri( '/images/Group 141.png' ); ?>" alt="">
             </div>
             <div class="col-span-12 2xl:col-span-5 2xl:col-start-8 2xl:col-end-12 order-1 2xl:order-2">
@@ -64,11 +64,11 @@ get_header();
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4">
                 <img class="mb-4" src="<?php echo get_theme_file_uri('/images/Group 154.png'); ?>" alt="">
-                <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase mb-4">Subvidison</p>
+                <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase mb-4">Subvidision</p>
                 <p class="font-light text-aurora-grey-02 mb-4">We provide customers with a comprehensive land division plan in line with their needs and government planning requirements while maximising the use of land space. We can also provide document processing services concerning the use of land.</p>
             </div>
             <div class="col-span-12 2xl:col-span-5 2xl:col-start-7 2xl:col-end-11 mb-12 2xl:mb-0 relative">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/3GvoWg-ori.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/subdivision_resized.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 right-12 2xl:-right-12" src="<?php echo get_theme_file_uri( '/images/Group 175.png' ); ?>" alt="">
             </div>
         </div>
@@ -76,7 +76,7 @@ get_header();
     <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4 2xl:col-start-2 2xl:col-end-6 mb-12 2xl:mb-0 relative order-2 2xl:order-1">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/beWVMU-ori.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/planning_resized.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 left-12 2xl:-left-12" src="<?php echo get_theme_file_uri( '/images/Group 141.png' ); ?>" alt="">
             </div>
             <div class="col-span-12 2xl:col-span-5 2xl:col-start-8 2xl:col-end-12 order-1 2xl:order-2">
@@ -94,7 +94,7 @@ get_header();
                 <p class="font-light text-aurora-grey-02 mb-4">Aurora's project management and QS team closely monitor the progress of individual projects. They also maintain an open channel of communication between subcontractors and customers to ensure the build is delivered under the agreed standard.</p>
             </div>
             <div class="col-span-12 2xl:col-span-5 2xl:col-start-7 2xl:col-end-11 mb-12 2xl:mb-0 relative">
-                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/UgS4y0-ori.png' ); ?>" alt="">
+                <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/projectmanagement_resized.jpg' ); ?>" alt="">
                 <img class="absolute -bottom-12 right-12 2xl:-right-12" src="<?php echo get_theme_file_uri( '/images/Group 175.png' ); ?>" alt="">
             </div>
         </div>

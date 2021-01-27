@@ -1,9 +1,9 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-3/6 lg:h-5/6 mb-24 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/m8DVH7.png' ); ?>');">
+    <div class="relative h-full mb-24 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/AdobeStock_322912716 copy.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-        <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
+        <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
@@ -54,7 +54,7 @@ get_header();
 				?>
             </div>
         </div>
-        <div class="absolute bottom-0 h-2/6 w-full bg-aurora-blue-03 bg-opacity-30 bg-contain bg-no-repeat z-30" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1632.png' ); ?>');">
+        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height: 500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
         </div>
     </div>
     <div class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">

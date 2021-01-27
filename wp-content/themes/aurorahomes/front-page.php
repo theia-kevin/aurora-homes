@@ -1,9 +1,9 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-4/6 lg:h-5/6 mb-12 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/Group 315.png' ); ?>');">
+    <div class="relative h-full mb-12 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-        <div class="absolute h-2/6 w-full -bottom-12 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1984.png' ); ?>');">
+        <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
@@ -50,6 +50,8 @@ get_header();
         </div>
     </div>
     <div class="relative">
+        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
+        </div>
         <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0 relative z-40">
             <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 pb-12 lg:pb-24 mb-0 lg:mb-36">
                 <div class="col-start-1 row-start-1 col-span-1">
@@ -68,8 +70,6 @@ get_header();
                     <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>" alt="">
                 </div>
             </div>
-        </div>
-        <div class="absolute bottom-0 h-4/6 w-full bg-aurora-blue-03 bg-opacity-30 bg-contain bg-no-repeat z-30" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1986.png' ); ?>');">
         </div>
     </div>
     <div x-data="{ tab: 'completed' }">
@@ -199,8 +199,23 @@ get_header();
         </div>
     </div>
     <div class="container mx-auto px-4 lg:px-0 flex flex-wrap justify-around my-36">
-        <img class="m-4" src="<?php echo get_theme_file_uri( '/images/Group 327.png' ); ?>" alt="">
-        <img class="m-4" src="<?php echo get_theme_file_uri( '/images/Group 327.png' ); ?>" alt="">
+        <div class="w-full flex flex-wrap justify-around">
+            <div class="m-8">
+                <img src="<?php echo get_theme_file_uri( '/images/Logo Mt Wellington copy.png' ); ?>" alt="">
+            </div>
+            <div class="m-8">
+                <img src="<?php echo get_theme_file_uri( '/images/Akarana Logo set-2-a.png' ); ?>" alt="">
+            </div>
+            <div class="m-8">
+                <img src="<?php echo get_theme_file_uri( '/images/Akarana Logo set-3-a.png' ); ?>" alt="">
+            </div>
+            <div class="m-8">
+                <img src="<?php echo get_theme_file_uri( '/images/knk-logo.png' ); ?>" alt="">
+            </div>
+            <div class="m-8">
+                <img src="<?php echo get_theme_file_uri( '/images/logo.png' ); ?>" alt="">
+            </div>
+        </div>
     </div>
     <div class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
         <p class="font-black leading-tight text-4xl text-aurora-blue-06 uppercase">Make An Enquiry</p>
