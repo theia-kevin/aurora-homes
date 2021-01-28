@@ -31,6 +31,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import '~swiper/swiper-bundle.min.css';
 @import '~simple-lightbox/dist/simpleLightbox.min.css';
+@import '~aos/dist/aos.css';
+@import '~animate.css/animate.min.css';
 
 html, body {
   @apply relative h-full;

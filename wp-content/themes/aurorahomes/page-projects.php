@@ -5,7 +5,7 @@ get_header();
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
+        <div data-aos="fade-up" data-aos-duration="3000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Lorem Ipsum</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Dolor Sit</p>
