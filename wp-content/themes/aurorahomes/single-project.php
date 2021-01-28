@@ -15,9 +15,9 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
                     <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase"><?php echo get_the_title(); ?></p>
                     <p class="font-black leading-tight text-3xl text-aurora-blue-03 uppercase"><?php the_field( 'location' ); ?></p>
                 </div>
-                <a class="bg-aurora-blue-03 pl-8 pr-4 py-2 rounded-full font-light text-white flex flex-row mb-8" href="<?php echo get_permalink( get_next_post() ); ?>">
+                <a class="bg-aurora-blue-03 pl-8 pr-4 py-2 rounded-full font-light text-white flex flex-row items-center" href="<?php echo get_permalink( get_next_post() ); ?>">
                     Next Project
-                    <img class="ml-4" src="<?php echo get_theme_file_uri( '/images/right-arrow.png' ); ?>" alt="">
+                    <img class="w-8 h-4" src="<?php echo get_theme_file_uri( '/images/white arrow.svg' ); ?>" alt="">
                 </a>
             </div>
             <div class="col-span-12 lg:col-span-7 flex flex-col justify-center">
@@ -83,9 +83,9 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
         </div>
         <div class="grid grid-cols-12 my-8">
             <div class="col-span-12 flex items-center justify-end">
-                <a class="bg-aurora-blue-03 pl-8 pr-4 py-2 rounded-full font-light text-white flex flex-row" href="<?php echo get_permalink( get_next_post() ); ?>">
+                <a class="bg-aurora-blue-03 pl-8 pr-4 py-2 rounded-full font-light text-white flex flex-row items-center" href="<?php echo get_permalink( get_next_post() ); ?>">
                     Next Project
-                    <img class="ml-4" src="<?php echo get_theme_file_uri( '/images/right-arrow.png' ); ?>" alt="">
+                    <img class="w-8 h-4" src="<?php echo get_theme_file_uri( '/images/white arrow.svg' ); ?>" alt="">
                 </a>
             </div>
         </div>

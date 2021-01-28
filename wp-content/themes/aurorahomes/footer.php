@@ -51,10 +51,10 @@ if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) 
                 <p class="inline-block font-light text-xl text-white mb-4">Office: 118 Lincoln Road, Henderson,
                     Auckland, AKL 0610</p>
                 <div class="flex">
-                    <img class="h-4 w-4" src="<?php echo get_theme_file_uri('/images/facebook_Asset 7.svg') ?>" alt="">
-                    <img class="h-4 w-4" src="<?php echo get_theme_file_uri('/images/linkedin_Asset 5.svg') ?>" alt="">
-                    <img class="h-4 w-4" src="<?php echo get_theme_file_uri('/images/twitter_Asset 3.svg') ?>" alt="">
-                    <img class="h-4 w-4" src="<?php echo get_theme_file_uri('/images/youtube_Asset 4.svg') ?>" alt="">
+                    <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri('/images/facebook_Asset 7.svg') ?>" alt="">
+                    <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri('/images/linkedin_Asset 5.svg') ?>" alt="">
+                    <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri('/images/twitter_Asset 3.svg') ?>" alt="">
+                    <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri('/images/youtube_Asset 4.svg') ?>" alt="">
                 </div>
             </div>
         </div>
