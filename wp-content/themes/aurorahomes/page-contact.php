@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-4/6 lg:h-5/6 mb-24 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
+    <div class="relative h-full mb-24 bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
@@ -15,7 +15,7 @@ get_header();
     </div>
     <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
         <div class="grid grid-cols-12">
-            <div class="col-span-6 flex items-center justify-center">
+            <div class="col-span-4 flex items-center justify-start">
                 <div>
                     <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase mb-8">Office:</p>
                     <p class="font-light text-lg mb-8">118 Lincoln Road</p>
@@ -31,7 +31,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-span-6 relative">
+            <div class="col-span-8 relative">
                 <div id="map" class="w-full relative z-40" style="height: 500px;"></div>
                 <img class="absolute -bottom-8 right-8 2xl:-right-8" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
             </div>

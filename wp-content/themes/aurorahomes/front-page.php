@@ -292,9 +292,6 @@ get_header();
                 <img src="<?php echo get_theme_file_uri( '/images/Akarana Logo set-2-a.png' ); ?>" alt="">
             </div>
             <div class="m-8">
-                <img src="<?php echo get_theme_file_uri( '/images/Akarana Logo set-3-a.png' ); ?>" alt="">
-            </div>
-            <div class="m-8">
                 <img src="<?php echo get_theme_file_uri( '/images/knk-logo.png' ); ?>" alt="">
             </div>
             <div class="m-8">
