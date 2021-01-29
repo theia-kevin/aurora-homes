@@ -5,7 +5,7 @@ get_header();
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Building For</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Your Dream</p>
@@ -13,7 +13,7 @@ get_header();
                 Us</a>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-0 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0" class="container mx-auto px-4 lg:px-0 mb-0 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-5 flex flex-col justify-center text-right mb-12 lg:mb-0 order-2 lg:order-1">
                 <p class="font-light text-aurora-grey-02 mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -49,30 +49,115 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="relative">
+    <div data-aos="fade-up" data-aos-duration="2000" class="relative">
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
         </div>
         <div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-0 relative z-40">
-            <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:gap-12 pb-12 lg:pb-24 mb-0 lg:mb-36">
-                <div class="col-start-1 row-start-1 col-span-1">
-                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>" alt="">
+            <div class="grid grid-cols-3 lg:grid-rows-3 gap-4 lg:gap-12 pb-12 lg:pb-24 mb-0 lg:mb-36">
+                <div class="relative col-span-3 lg:col-start-1 lg:row-start-1 lg:col-span-1 cursor-pointer" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>');"
+                         x-show="!swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 14.png' ); ?>');"
+                         x-show="swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
                 </div>
-                <div class="col-start-2 row-start-1 col-span-1">
-                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/mVDpx8.png' ); ?>" alt="">
+                <div class="relative col-span-3 lg:col-start-2 lg:row-start-1 lg:col-span-1 cursor-pointer" style="min-height: 300px;" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/mVDpx8.png' ); ?>');"
+                         x-show="!swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 17.png' ); ?>');"
+                         x-show="swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
                 </div>
-                <div class="col-start-2 row-start-2 col-span-1">
-                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/hprdFP.png' ); ?>" alt="">
+                <div class="relative col-span-3 lg:col-start-2 lg:row-start-2 lg:col-span-1 cursor-pointer" style="min-height: 300px;" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/hprdFP.png' ); ?>');"
+                         x-show="!swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 16.png' ); ?>');"
+                         x-show="swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
                 </div>
-                <div class="col-start-3 row-start-2 col-span-1">
-                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/beWVMU.png' ); ?>" alt="">
+                <div class="relative col-span-3 lg:col-start-3 lg:row-start-2 lg:col-span-1 cursor-pointer" style="min-height: 300px;" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 5.png' ); ?>');"
+                         x-show="!swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/beWVMU.png' ); ?>');"
+                         x-show="swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
                 </div>
-                <div class="col-start-2 row-start-3 col-span-1">
-                    <img class="mx-auto" src="<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>" alt="">
+                <div class="relative col-span-3 lg:col-start-2 lg:row-start-3 lg:col-span-1 cursor-pointer" style="min-height: 300px;" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>');"
+                         x-show="!swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 15.png' ); ?>');"
+                         x-show="swapImage"
+                         x-transition:enter="transition-opacity ease-linear duration-300"
+                         x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100"
+                         x-transition:leave="transition-opacity ease-linear duration-300"
+                         x-transition:leave-start="opacity-100"
+                         x-transition:leave-end="opacity-0">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div x-data="{ tab: 'completed' }">
+    <div data-aos="fade-up" data-aos-duration="2000" x-data="{ tab: 'completed' }">
         <div class="container mx-auto px-4 lg:px-0 mb-0 lg:mb-12">
             <div class="flex flex-col">
                 <p class="font-bold text-2xl text-aurora-blue-03 uppercase">Our Work</p>
@@ -198,7 +283,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 flex flex-wrap justify-around my-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 flex flex-wrap justify-around my-36">
         <div class="w-full flex flex-wrap justify-around">
             <div class="m-8">
                 <img src="<?php echo get_theme_file_uri( '/images/Logo Mt Wellington copy.png' ); ?>" alt="">
@@ -217,7 +302,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
         <p class="font-black leading-tight text-4xl text-aurora-blue-06 uppercase">Make An Enquiry</p>
         <p class="border-b border-aurora-grey-01 font-light leading-tight pb-8 w-1/2 mb-8">Lorem ipsum dolor sit amet,
             consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam

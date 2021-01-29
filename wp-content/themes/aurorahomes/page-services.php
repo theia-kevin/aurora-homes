@@ -5,7 +5,7 @@ get_header();
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
+        <div data-aos="fade-up" data-aos-duration="2000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-yellow-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Productive &</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Efficient</p>
@@ -13,7 +13,7 @@ get_header();
                 Us</a>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-5 mb-24 2xl:mb-0 relative">
                 <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/ladder.jpg' ); ?>" alt="">
@@ -30,10 +30,10 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto my-24 lg:my-32 px-4 lg:px-0 ">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto my-24 lg:my-32 px-4 lg:px-0 ">
         <img src="<?php echo get_theme_file_uri('/images/Group 178.png'); ?>" alt="">
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4">
                 <img class="mb-4" src="<?php echo get_theme_file_uri('/images/Group 152.png'); ?>" alt="">
@@ -46,7 +46,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4 2xl:col-start-2 2xl:col-end-6 mb-12 2xl:mb-0 relative order-2 2xl:order-1">
                 <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/development_resized.jpg' ); ?>" alt="">
@@ -60,7 +60,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4">
                 <img class="mb-4" src="<?php echo get_theme_file_uri('/images/Group 154.png'); ?>" alt="">
@@ -73,7 +73,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4 2xl:col-start-2 2xl:col-end-6 mb-12 2xl:mb-0 relative order-2 2xl:order-1">
                 <img class="object-cover w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/planning_resized.jpg' ); ?>" alt="">
@@ -86,7 +86,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-36">
         <div class="grid grid-cols-12">
             <div class="col-span-12 2xl:col-span-4">
                 <img class="mb-4" src="<?php echo get_theme_file_uri('/images/Group 176.png'); ?>" alt="">
@@ -99,7 +99,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto flex justify-end mb-8">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto flex justify-end mb-8">
         <a class="self-start bg-aurora-blue-03 px-8 py-2 rounded-full font-light text-white mr-4" href="<?php echo get_permalink( get_page_by_title( 'Projects' ) ); ?>">View Our Work</a>
         <a class="self-start bg-aurora-red-01 px-8 py-2 rounded-full font-light text-white mr-4" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact Us</a>
     </div>

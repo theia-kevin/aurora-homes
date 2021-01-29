@@ -5,7 +5,7 @@ get_header();
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
+        <div data-aos="fade-up" data-aos-duration="2000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Building For</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Your Dream</p>
@@ -13,7 +13,7 @@ get_header();
                 Us</a>
         </div>
     </div>
-    <div class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
         <div class="grid grid-cols-12">
             <div class="col-span-6 flex items-center justify-center">
                 <div>
@@ -37,7 +37,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto mb-0 lg:mb-36 px-4 lg:px-0">
         <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase">Make An Enquiry</p>
         <p class="border-b border-aurora-grey-01 font-light leading-tight pb-8 w-1/2 mb-8">Lorem ipsum dolor sit amet,
             consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam

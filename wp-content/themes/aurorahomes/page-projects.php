@@ -5,7 +5,7 @@ get_header();
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
+        <div data-aos="fade-up" data-aos-duration="2000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
             <p class="font-bold text-4xl text-aurora-orange-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Lorem Ipsum</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Dolor Sit</p>
@@ -13,7 +13,7 @@ get_header();
                 Us</a>
         </div>
     </div>
-    <div class="relative">
+    <div data-aos="fade-up" data-aos-duration="2000" class="relative">
         <div class="container mx-auto px-4 lg:px-0 pb-32 mb-24 lg:mb-0 relative z-40">
             <div class="grid grid-cols-12 mb-8 lg:mb-16 gap-0 lg:gap-x-16">
                 <div class="col-span-12 lg:col-span-6">
@@ -57,7 +57,7 @@ get_header();
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height: 500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">
         <div class="grid grid-cols-12 mb-8 lg:mb-16 gap-0 lg:gap-x-16">
             <div class="col-span-12 lg:col-start-7 lg:col-span-6">
                 <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase mb-8">Projects Work In
@@ -97,7 +97,7 @@ get_header();
 	        ?>
         </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-24">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 mb-12 lg:mb-24">
         <div class="flex flex-wrap justify-between items-center">
             <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">LOREM IPSUM DOLOR SIT AMET,
                 CONSEC</p>
