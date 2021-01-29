@@ -102,13 +102,18 @@ var googleMapLoader = new _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_0__
   version: 'weekly'
 }).load().then(function () {
   var coordinates = {
-    lat: -36.792960,
-    lng: 174.772180
+    lat: -36.85892868041992,
+    lng: 174.6298065185547
   };
   var map = new google.maps.Map(document.getElementById('map'), {
     center: coordinates,
     zoom: 14,
     disableDefaultUI: true
+  });
+  new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    title: "Hello World!"
   });
 });
 
