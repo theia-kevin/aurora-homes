@@ -30,3 +30,5 @@ node_modules/
 .idea
 
 wp-content/uploads/wpcf7_captcha/
+
+wp-config.php
