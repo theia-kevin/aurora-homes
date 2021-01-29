@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @googlemaps/js-api-loader */ "./node_modules/@googlemaps/js-api-loader/dist/index.esm.js");
 
 var googleMapLoader = new _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_0__["Loader"]({
-  apiKey: 'AIzaSyC2ESQaUfMU1zOeZdCbRwzLtEyK2bSg1Eg',
+  apiKey: 'AIzaSyCJwOrJjN-sht5ht6tyPUqGBNgFQRXK4P4',
   version: 'weekly'
 }).load().then(function () {
   var coordinates = {
