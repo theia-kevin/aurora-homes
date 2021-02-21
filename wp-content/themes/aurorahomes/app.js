@@ -2085,8 +2085,8 @@ aos__WEBPACK_IMPORTED_MODULE_0___default.a.init();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\aurora-homes\wp-content\themes\aurorahomes\js\app.js */"./js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\aurora-homes\wp-content\themes\aurorahomes\sass\style.scss */"./sass/style.scss");
+__webpack_require__(/*! C:\laragon\www-theia-2020\aurora-homes\wp-content\themes\aurorahomes\js\app.js */"./js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www-theia-2020\aurora-homes\wp-content\themes\aurorahomes\sass\style.scss */"./sass/style.scss");
 
 
 /***/ })

@@ -422,7 +422,7 @@ class Loader {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\aurora-homes\wp-content\themes\aurorahomes\js\page-contact.js */"./js/page-contact.js");
+module.exports = __webpack_require__(/*! C:\laragon\www-theia-2020\aurora-homes\wp-content\themes\aurorahomes\js\page-contact.js */"./js/page-contact.js");
 
 
 /***/ })

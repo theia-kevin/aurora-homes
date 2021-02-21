@@ -6,7 +6,7 @@ if ( is_page( 'Home' ) || is_page( 'Contact' ) ) {
 	$background_position = 'bg-center';
 }
 
-if ( is_page( 'About' ) ) {
+if ( is_page( 'About' ) || is_page( 'Careers' ) ) {
 	$background          = get_theme_file_uri( '/images/workers_resized.jpg' );
 	$background_position = 'bg-left-bottom';
 }
@@ -16,7 +16,7 @@ if ( is_page( 'Services' ) ) {
 	$background_position = 'bg-left-bottom';
 }
 
-if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) ) {
+if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) || is_page( 'Apply' ) ) {
 	$background          = get_theme_file_uri( '/images/AdobeStock_322912716 copy.jpg' );
 	$background_position = 'bg-left-bottom';
 }

@@ -12403,7 +12403,7 @@ _esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__["default"].use(comp
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\aurora-homes\wp-content\themes\aurorahomes\js\single-project.js */"./js/single-project.js");
+module.exports = __webpack_require__(/*! C:\laragon\www-theia-2020\aurora-homes\wp-content\themes\aurorahomes\js\single-project.js */"./js/single-project.js");
 
 
 /***/ })

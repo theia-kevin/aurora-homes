@@ -143,9 +143,13 @@ add_action( 'widgets_init', 'aurorahomes_widgets_init' );
  */
 function aurorahomes_scripts() {
 	wp_enqueue_style( 'aurorahomes-style', get_stylesheet_uri(), array(), _S_VERSION );
+
 	wp_style_add_data( 'aurorahomes-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'aurorahomes-navigation', get_template_directory_uri() . '/js/navigation.js', array(),
+		_S_VERSION, true );
+
+	wp_enqueue_script( 'aurorahomes-app', get_template_directory_uri() . '/app.js', array(),
 		_S_VERSION, true );
 
 	if (is_page('Home')) {
@@ -162,12 +166,26 @@ function aurorahomes_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'aurorahomes-app', get_template_directory_uri() . '/app.js', array(),
-		_S_VERSION, true );
-
 	if (is_singular('project') && ( get_post_type() == 'project' )) {
-		wp_enqueue_script('tsqdevelopment-single-project', get_template_directory_uri() . '/single-project.js', array(),
+		wp_enqueue_script('aurorahomes-single-project', get_template_directory_uri() . '/single-project.js', array(),
 			_S_VERSION, true);
+	}
+
+	if (is_page('Apply')) {
+		wp_enqueue_script('aurorahomes-page-apply', get_template_directory_uri() . '/page-apply.js', array(),
+			_S_VERSION, true);
+	}
+
+	if (isset($_GET['listing_id'])) {
+		$listing_data = get_post($_GET['listing_id'])->to_array();
+		$listing_data['post_location'] = get_field('location', $_GET['listing_id']);
+		$listing_data['post_description'] = get_field('description', $_GET['listing_id']);
+
+		wp_localize_script( 'aurorahomes-page-apply', 'LISTING', array(
+			'data' => $listing_data,
+			'ajax_url' => admin_url('admin-ajax.php'),
+			'nonce' => wp_create_nonce('ajax-nonce')
+		) );
 	}
 }
 
@@ -224,3 +242,60 @@ function addNavMenuActiveClass( $classes ) {
 }
 
 add_filter('nav_menu_css_class', 'addNavMenuActiveClass', 10, 2);
+
+function aurora_send_application() {
+	if ( !wp_verify_nonce( $_POST['nonce'], 'ajax-nonce' ) ) {
+		echo json_encode(['status' => 0, 'message' => 'Invalid nonce.']);
+		die();
+	}
+
+	$to = [];
+	$to[] = get_option('admin_email');
+	$subject = 'Job Application';
+	$headers = '';
+
+	require_once( ABSPATH . 'wp-admin/includes/image.php' );
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
+	require_once( ABSPATH . 'wp-admin/includes/media.php' );
+	$attachment_id = media_handle_upload( 'resume', 0 );
+	$attachments  = [wp_get_attachment_url($attachment_id)];
+
+	ob_start();
+
+	echo '
+        <p>First Name: ' . $_POST["first_name"] . '</p>
+        <p>Last Name: ' . $_POST["last_name"] . '</p>
+        <p>Email: ' . $_POST["email"] . '</p>
+        <p>Phone: ' . $_POST["phone"] . '</p>
+        <p>Address: ' . $_POST["address"] . '</p>
+        <p>City: ' . $_POST["city"] . '</p>
+        <p>Postal Code: ' . $_POST["postal_code"] . '</p>
+        <p>Country: ' . $_POST["country"] . '</p>
+        <p>Resume: ' . '*read attachment' . '</p>
+        <p>Date Available: ' . $_POST["date_available"] . '</p>
+        <p>Desired Pay: ' . $_POST["desired_pay"] . '</p>
+        <p>Website: ' . $_POST["website"] . '</p>
+        <p>Profile URL: ' . $_POST["profile_url"] . '</p>
+        ';
+
+	$message = ob_get_contents();
+	ob_end_clean();
+
+	$mail = wp_mail($to, $subject, $message, $headers, $attachments);
+
+	if (!$mail) {
+		echo json_encode(['status' => 0, 'message' => 'Failed to send application.']);
+		die();
+	}
+
+	echo json_encode(['status' => 1, 'message' => 'Application has been sent.']);
+	die();
+}
+
+function aurora_send_application_content_type() {
+	return "text/html";
+}
+
+add_action('wp_ajax_aurora_send_application', 'aurora_send_application');
+add_action('wp_ajax_nopriv_aurora_send_application', 'aurora_send_application');
+add_filter('wp_mail_content_type','aurora_send_application_content_type' );
