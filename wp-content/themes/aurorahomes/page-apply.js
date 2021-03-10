@@ -27776,9 +27776,10 @@ var render = function() {
         [_vm._v(_vm._s(_vm.listing.post_location))]
       ),
       _vm._v(" "),
-      _c("p", { staticClass: "font-light mb-16" }, [
-        _vm._v(_vm._s(_vm.listing.post_description))
-      ]),
+      _c("div", {
+        staticClass: "mb-16",
+        domProps: { innerHTML: _vm._s(_vm.listing.post_description) }
+      }),
       _vm._v(" "),
       _c(
         "p",

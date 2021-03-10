@@ -25,13 +25,13 @@ if ( is_page( 'Projects' ) || (is_single() && ( get_post_type() == 'project' )) 
     <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
     <div class="absolute h-2/6 lg:h-3/6 w-full -top-4 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1985.png' ); ?>');">
     </div>
-    <div class="absolute inset-0 container mx-auto lg:mb-12 px-4 lg:px-0 flex flex-col justify-end z-40">
+    <div class="absolute inset-0 container mx-auto lg:mb-8 px-4 lg:px-0 flex flex-col justify-end z-40">
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-5 flex flex-col justify-between">
                 <a class="block mb-4 lg:mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img src="<?php echo get_theme_file_uri('/images/cropped-cropped-Asset-1-2.png'); ?>" alt="">
                 </a>
-                <p class="font-light text-white mb-4 lg:mb-0">© COPYRIGHT 2020 AURORA HOMES LIMITED. ALL RIGHTS
+                <p class="font-light text-white mb-4 lg:mb-0">© COPYRIGHT 2020-2021 AURORA HOMES LIMITED. ALL RIGHTS
                     RESERVED.</p>
             </div>
             <div class="col-span-12 lg:col-span-3 flex flex-col mb-4 lg:mb-0">

@@ -21,7 +21,7 @@
 	);
 	?>
 </header>
-<header class="container mx-auto mt-4 mobile absolute inset-0 h-36 z-50 flex lg:hidden items-end justify-between" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
+<header class="container mx-auto mt-4 mobile absolute inset-0 h-36 z-50 flex lg:hidden items-center lg:items-end justify-between" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>

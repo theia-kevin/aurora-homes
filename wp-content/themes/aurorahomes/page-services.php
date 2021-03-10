@@ -6,7 +6,6 @@ get_header();
         <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" class="absolute inset-0 container mx-auto px-4 lg:px-0 flex flex-col justify-center z-40">
-            <p class="font-bold text-4xl text-aurora-yellow-01 uppercase mb-8">We Are</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase">Productive &</p>
             <p class="font-black text-4xl lg:text-8xl text-white uppercase mb-8">Efficient</p>
             <a class="self-start bg-aurora-yellow-01 px-8 py-2 rounded-full font-light text-white" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact

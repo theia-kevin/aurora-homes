@@ -1,7 +1,12 @@
 <?php
 get_header();
 
-$status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name'];
+$status = '';
+
+if (get_the_terms( get_the_ID(), 'project_status' )) {
+	$status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name'];
+}
+
 ?>
     <div class="relative h-4/6 lg:h-96 mb-24 bg-cover bg-no-repeat bg-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/m8DVH7.png' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
@@ -40,24 +45,32 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
                     <div class="col-span-12">
                         <div class="swiper-container swiper-primary">
                             <div class="swiper-wrapper relative">
-								<?php
-								foreach ( get_field( 'exterior' ) as $exterior_image ) {
-									?>
-                                    <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 400px; background-image: url('<?php echo $exterior_image; ?>');">
-                                    </div>
-								<?php } ?>
+	                            <?php
+	                            if ( get_field( 'exterior' ) ) {
+		                            foreach ( get_field( 'exterior' ) as $exterior_image ) {
+			                            ?>
+                                        <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 400px; background-image: url('<?php echo $exterior_image; ?>');">
+                                        </div>
+			                            <?php
+		                            }
+	                            }
+	                            ?>
                             </div>
                         </div>
                     </div>
                     <div class="col-span-12">
                         <div class="swiper-container swiper-secondary">
                             <div class="swiper-wrapper relative">
-								<?php
-								foreach ( get_field( 'exterior' ) as $exterior_image ) {
-									?>
-                                    <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 250px; background-image: url('<?php echo $exterior_image; ?>');">
-                                    </div>
-								<?php } ?>
+	                            <?php
+	                            if ( get_field( 'exterior' ) ) {
+		                            foreach ( get_field( 'exterior' ) as $exterior_image ) {
+			                            ?>
+                                        <div class="swiper-slide w-full bg-cover bg-no-repeat bg-center" style="height: 250px; background-image: url('<?php echo $exterior_image; ?>');">
+                                        </div>
+			                            <?php
+		                            }
+	                            }
+	                            ?>
                             </div>
                         </div>
                     </div>
@@ -69,16 +82,20 @@ $status = get_the_terms( get_the_ID(), 'project_status' )[0]->to_array()['name']
         <div class="swiper-lightbox">
             <div class="grid grid-cols-12 gap-4">
 	            <?php
-	            foreach ( get_field( 'interior' ) as $interior_image ) {
-		            ?>
-                    <div class="col-span-12 lg:col-span-4" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
-                        <a href="<?php echo $interior_image; ?>">
-                            <div class="w-full bg-cover bg-no-repeat bg-center relative" style="height: 300px; background-image: url('<?php echo $interior_image; ?>');">
-                                <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div>
-                            </div>
-                        </a>
-                    </div>
-	            <?php } ?>
+	            if ( get_field( 'interior' ) ) {
+		            foreach ( get_field( 'interior' ) as $interior_image ) {
+			            ?>
+                        <div class="col-span-12 lg:col-span-4" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
+                            <a href="<?php echo $interior_image; ?>">
+                                <div class="w-full bg-cover bg-no-repeat bg-center relative" style="height: 300px; background-image: url('<?php echo $interior_image; ?>');">
+                                    <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div>
+                                </div>
+                            </a>
+                        </div>
+			            <?php
+		            }
+	            }
+	            ?>
             </div>
         </div>
         <div class="grid grid-cols-12 my-8">

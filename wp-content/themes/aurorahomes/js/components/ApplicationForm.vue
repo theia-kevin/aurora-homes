@@ -5,7 +5,7 @@
     </div>
     <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">{{ listing.post_title }}</p>
     <p class="font-black leading-tight text-2xl text-aurora-blue-03 uppercase mb-8">{{ listing.post_location }}</p>
-    <p class="font-light mb-16">{{ listing.post_description }}</p>
+    <div class="mb-16" v-html="listing.post_description"></div>
     <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase border-b border-black pb-4 mb-8">Apply For
       This Position</p>
     <ValidationObserver ref="formObserver">
