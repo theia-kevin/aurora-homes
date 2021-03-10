@@ -61,7 +61,7 @@ and it is also our requirement of ourselves.</p>
                          x-transition:leave-start="opacity-100"
                          x-transition:leave-end="opacity-0">
                     </div>
-                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 14.png' ); ?>');"
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 14 2.png' ); ?>');"
                          x-show="swapImage"
                          x-transition:enter="transition-opacity ease-linear duration-300"
                          x-transition:enter-start="opacity-0"
@@ -81,7 +81,7 @@ and it is also our requirement of ourselves.</p>
                          x-transition:leave-start="opacity-100"
                          x-transition:leave-end="opacity-0">
                     </div>
-                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 17.png' ); ?>');"
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 17 2.png' ); ?>');"
                          x-show="swapImage"
                          x-transition:enter="transition-opacity ease-linear duration-300"
                          x-transition:enter-start="opacity-0"
@@ -101,7 +101,7 @@ and it is also our requirement of ourselves.</p>
                          x-transition:leave-start="opacity-100"
                          x-transition:leave-end="opacity-0">
                     </div>
-                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 16.png' ); ?>');"
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 16 2.png' ); ?>');"
                          x-show="swapImage"
                          x-transition:enter="transition-opacity ease-linear duration-300"
                          x-transition:enter-start="opacity-0"
@@ -121,7 +121,7 @@ and it is also our requirement of ourselves.</p>
                          x-transition:leave-start="opacity-100"
                          x-transition:leave-end="opacity-0">
                     </div>
-                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/beWVMU.png' ); ?>');"
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/beWVMU 2.png' ); ?>');"
                          x-show="swapImage"
                          x-transition:enter="transition-opacity ease-linear duration-300"
                          x-transition:enter-start="opacity-0"
@@ -141,7 +141,7 @@ and it is also our requirement of ourselves.</p>
                          x-transition:leave-start="opacity-100"
                          x-transition:leave-end="opacity-0">
                     </div>
-                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 15.png' ); ?>');"
+                    <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 15 2.png' ); ?>');"
                          x-show="swapImage"
                          x-transition:enter="transition-opacity ease-linear duration-300"
                          x-transition:enter-start="opacity-0"
