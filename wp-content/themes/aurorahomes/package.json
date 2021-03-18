@@ -69,6 +69,7 @@
     "@googlemaps/js-api-loader": "^1.11.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "laravel-mix-purgecss": "^6.0.0",
     "simple-lightbox": "^2.1.0",
     "smooth-scrollbar": "^8.5.3",
     "swiper": "^6.4.5"
