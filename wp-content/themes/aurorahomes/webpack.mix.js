@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-require('laravel-mix-purgecss');
 
 mix.options({
   processCssUrls: false,
@@ -7,19 +6,6 @@ mix.options({
     require('tailwindcss'),
     require('autoprefixer')
   ],
-}).purgeCss({
-  enabled: mix.inProduction(),
-  content: [
-    'js/*.js',
-    'js/**/*.js',
-    'js/*.vue',
-    'js/**/*.vue',
-    'sass/*.scss',
-    'sass/*/**.scss',
-    '**/*.php',
-    '*.php',
-  ],
-  css: ['style.css'],
 });
 
 mix.webpackConfig({
