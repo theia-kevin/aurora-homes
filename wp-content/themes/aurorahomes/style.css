@@ -951,6 +951,15 @@ select{
 .mb-20{
 	margin-bottom: 5rem !important;
 }
+.mb-\[130px\]{
+	margin-bottom: 130px !important;
+}
+.mb-\[120px\]{
+	margin-bottom: 120px !important;
+}
+.mb-\[100px\]{
+	margin-bottom: 100px !important;
+}
 .flex{
 	display: flex !important;
 }
@@ -966,8 +975,8 @@ select{
 .hidden{
 	display: none !important;
 }
-.h-\[500px\]{
-	height: 500px !important;
+.h-\[700px\]{
+	height: 700px !important;
 }
 .h-2\/6{
 	height: 33.333333% !important;
@@ -1005,8 +1014,8 @@ select{
 .h-20{
 	height: 5rem !important;
 }
-.h-\[700px\]{
-	height: 700px !important;
+.h-\[800px\]{
+	height: 800px !important;
 }
 .w-full{
 	width: 100% !important;
@@ -1527,11 +1536,11 @@ select{
 	.xl\:hidden{
 		display: none !important;
 	}
-	.xl\:h-3\/6{
-		height: 50% !important;
-	}
 	.xl\:h-\[500px\]{
 		height: 500px !important;
+	}
+	.xl\:h-3\/6{
+		height: 50% !important;
 	}
 	.xl\:items-end{
 		align-items: flex-end !important;
