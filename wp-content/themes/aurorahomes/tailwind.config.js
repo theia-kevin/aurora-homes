@@ -1,14 +1,22 @@
 const {colors: defaultColors} = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  corePlugins: {
+    preflight: true,
+  },
   purge: {
     enabled: true,
     content: [
-      './js/*.js',
-      './js/**/*.vue',
-      '*.php',
-    ],
+      './resources/js/*.{js,vue}',
+      './resources/js/**/*.{js,vue}',
+      './resources/sass/*.scss',
+      './resources/sass/**/*.scss',
+      './*.php',
+      './**/*.php',
+    ]
   },
+  important: true,
+  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -126,12 +134,28 @@ module.exports = {
         },
       },
       fontFamily: {
-        'sans': ['foco'],
-        'serif': ['foco'],
-        'mono': ['foco']
+        'sans': ['sans-serif'],
+        'serif': ['sans-serif'],
+        'mono': ['sans-serif'],
+        'foco-regular': ['foco-regular','sans-serif'],
+        'foco-regular-italic': ['foco-regular-italic','sans-serif'],
+        'foco-bold': ['foco-bold','sans-serif'],
+        'foco-bold-italic': ['foco-bold-italic','sans-serif'],
+        'foco-light': ['foco-light','sans-serif'],
+        'foco-light-italic': ['foco-light-italic','sans-serif'],
+        'foco-black': ['foco-black','sans-serif'],
+        'foco-black-italic': ['foco-black-italic','sans-serif'],
       },
     },
-    variants: {},
-    plugins: [],
-  }
+    variants: {
+      extend: {},
+      fontWeight: ['hover'],
+      transform: ['hover'],
+      overflow: ['hover'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwindcss-debug-screens'),
+  ],
 };

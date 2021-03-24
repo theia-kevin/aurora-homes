@@ -38,6 +38,10 @@ html, body {
   @apply relative h-full;
 }
 
+body {
+  @apply debug-screens;
+}
+
 .menu-menu-1-container {
   @apply flex items-center;
 
@@ -48,12 +52,12 @@ html, body {
       @apply px-12;
 
       a {
-        @apply font-normal text-xl text-white;
+        @apply font-foco-light text-[21px] text-white;
       }
 
       &.active {
         a {
-          @apply font-black;
+          @apply font-foco-black;
         }
       }
     }
@@ -71,12 +75,12 @@ html, body {
         @apply py-4;
 
         a {
-          @apply font-normal text-xl text-white;
+          @apply font-foco-light text-[21px] text-white;
         }
 
         &.active {
           a {
-            @apply font-black;
+            @apply font-foco-black;
           }
         }
       }
