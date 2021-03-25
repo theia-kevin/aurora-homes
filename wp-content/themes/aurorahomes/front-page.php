@@ -8,50 +8,47 @@ get_header();
         <div data-aos="fade-right" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
             <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase">Building For</p>
             <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase pb-[30px]">Your Dream</p>
-            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 rounded-full py-[10px] px-[30px] self-start" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">Contact
-                Us</a>
+            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 rounded-full py-[10px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
+                Contact Us
+            </a>
         </div>
     </div>
     <div data-aos="fade-up" class="container mx-auto px-4">
         <div class="grid grid-cols-12 mb-[100px]">
-            <div class="col-span-12 xl:col-span-5 flex flex-col justify-center text-right mb-12 order-2 xl:order-1">
-                <p class="font-foco-light text-[16px] text-aurora-grey-02 mb-12">As a member of the New Zealand
+            <div class="col-span-12 xl:col-span-5 flex flex-col justify-center order-2 xl:order-1">
+                <p class="font-foco-light text-[16px] text-aurora-grey-02 text-left pb-[70px]">As a member of the New
+                    Zealand
                     construction industry, we are young and full of
                     ambitions. Construction is not only our job but also our pursuit. To complete high-
                     quality work and provide comprehensive services is our commitment to customers,
                     and it is also our requirement of ourselves.</p>
-                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-end" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
+                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-end transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
                     More</a>
             </div>
-            <div class="col-span-12 xl:col-start-7 xl:col-span-6 relative mb-12 order-1 xl:order-2">
+            <div class="col-span-12 xl:col-start-7 xl:col-span-6 relative order-1 xl:order-2 mb-[50px]">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">About Us</p>
-                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase mb-8">Service Slogan:
-                    High-quality output, the most intimate service.</p>
-                <img class="object-cover object-center h-[400px] w-full relative z-40" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
-                <img class="absolute -bottom-8 right-0 xl:-right-8" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[50px]">Aurora, Your
+                    Reliable Partner</p>
+                <img class="object-cover object-center h-[400px] w-full relative z-40 pb-[50px] pr-[50px]" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
+                <img class="absolute bottom-[0] right-[0px]" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
             </div>
         </div>
         <div class="grid grid-cols-12 mb-[50px]">
-            <div class="col-span-12 xl:col-span-5 flex flex-col justify-center">
+            <div class="col-span-12 xl:col-span-5 flex flex-col justify-start">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">What We Do</p>
-                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase mb-8">Aurora is
-                    providing a range
-                    of services from land division to house construction.</p>
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">The Highest
+                    Quality Work, The Most Intimate Service.</p>
             </div>
-            <div class="col-span-12 xl:col-start-7 xl:col-span-6 mb-12 mt-auto">
-                <div class="flex flex-col w-[450px] ml-auto">
-                    <p class="font-foco-light text-[16px] text-aurora-grey-02 mb-4">Our collective experience means that we
-                        can provide:</p>
-                    <ul class="list-disc list-inside mb-12">
-                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Feasibility plans and suggestions based
-                            on client
-                            budget
+            <div class="col-span-12 xl:col-start-7 flex items-end justify-end">
+                <div class="flex flex-col justify-end h-[350px] w-[450px]">
+                    <p class="font-foco-light text-[16px] text-aurora-grey-02 pb-[15px]">Aurora provides variety of services
+                        by priortising customers' needs:</p>
+                    <ul class="list-decimal list-inside pb-[50px]">
+                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Land subdivision</li>
+                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Construction projects management
                         </li>
-                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Construction cost budget analysis</li>
-                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Assistance in the handling of
-                            government-related
-                            documents
-                        </li>
+                        <li class="font-foco-light text-[16px] text-aurora-grey-02">House structure design</li>
+                        <li class="font-foco-light text-[16px] text-aurora-grey-02">Indoor facility configuration</li>
                     </ul>
                     <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-end" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
                         More</a>
@@ -62,7 +59,7 @@ get_header();
     <div data-aos="fade-up" class="relative">
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
         </div>
-        <div class="container mx-auto px-4 pb-24 mb-24 relative z-40">
+        <div class="container mx-auto mb-[200px] px-4 pb-[100px] relative z-40">
             <div class="grid grid-cols-12 gap-y-12 gap-x-0 xl:gap-x-12">
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>');"
@@ -84,7 +81,6 @@ get_header();
                          x-transition:leave-end="opacity-0">
                     </div>
                 </div>
-
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/mVDpx8.png' ); ?>');"
                          x-show="!swapImage"
@@ -105,11 +101,8 @@ get_header();
                          x-transition:leave-end="opacity-0">
                     </div>
                 </div>
-
                 <div class="col-span-12 xl:col-span-4 hidden xl:block"></div>
-
                 <div class="col-span-12 xl:col-span-4 hidden xl:block"></div>
-
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/hprdFP.png' ); ?>');"
                          x-show="!swapImage"
@@ -130,7 +123,6 @@ get_header();
                          x-transition:leave-end="opacity-0">
                     </div>
                 </div>
-
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 5.png' ); ?>');"
                          x-show="!swapImage"
@@ -151,9 +143,7 @@ get_header();
                          x-transition:leave-end="opacity-0">
                     </div>
                 </div>
-
                 <div class="col-span-12 xl:col-span-4 hidden xl:block"></div>
-
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/3GvoWg.png' ); ?>');"
                          x-show="!swapImage"
@@ -174,17 +164,16 @@ get_header();
                          x-transition:leave-end="opacity-0">
                     </div>
                 </div>
-
                 <div class="col-span-12 xl:col-span-4 hidden xl:block"></div>
             </div>
         </div>
     </div>
     <div data-aos="fade-up" x-data="{ tab: 'completed' }">
-        <div class="container mx-auto px-4 mb-12">
+        <div class="container mx-auto px-4">
             <div class="flex flex-col">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">Our Work</p>
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Projects</p>
-                <div class="flex flex-wrap mt-4 mb-8">
+                <div class="flex flex-wrap pt-[20px] pb-[60px]">
                     <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-start cursor-pointer mr-4 my-2"
                          x-on:click="tab = 'completed'"
                          x-bind:class="{'bg-aurora-yellow-01' : tab === 'completed'}"
@@ -275,25 +264,9 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="container mx-auto px-4 flex flex-wrap justify-around my-36">
-        <div class="w-full flex flex-wrap justify-around">
-            <div class="m-8">
-                <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Logo Mt Wellington copy.png' ); ?>" alt="">
-            </div>
-            <div class="m-8">
-                <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Akarana Logo set-2-a.png' ); ?>" alt="">
-            </div>
-            <div class="m-8">
-                <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/knk-logo.png' ); ?>" alt="">
-            </div>
-            <div class="m-8">
-                <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/logo.png' ); ?>" alt="">
-            </div>
-        </div>
-    </div>
     <div data-aos="fade-up" class="container mx-auto mb-24 px-4">
         <p class="font-foco-black text-[36px] text-aurora-blue-06">Make An Enquiry</p>
-        <p class="font-foco-light text-[14px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-8 w-1/2 mb-8">Leave us a message.</p>
+        <p class="font-foco-light text-[14px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-8 mb-8">Leave us a message.</p>
         <div>
 			<?php echo do_shortcode( '[contact-form-7 id="27" title="Contact form 1"]' ); ?>
         </div>

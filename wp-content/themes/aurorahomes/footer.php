@@ -29,7 +29,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-5 flex flex-col justify-between">
                 <a class="block mb-4 xl:mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <img class="object-contain h-[80px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
+                    <img class="object-contain h-[50px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
                 </a>
                 <p class="font-foco-regular text-[16px] text-white mb-4 xl:mb-0">© COPYRIGHT 2020-2021 AURORA HOMES
                     LIMITED. ALL RIGHTS
@@ -41,7 +41,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
 					<?php
 					foreach ( wp_get_nav_menu_items( 'menu-1' ) as $menu ) {
 						?>
-                        <a class="inline-block font-foco-regular text-[18px] text-white" href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+                        <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
 						<?php
 					}
 					?>
@@ -49,11 +49,15 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
             </div>
             <div class="col-span-12 xl:col-span-4 flex flex-col mb-4 xl:mb-0">
                 <p class="font-foco-bold text-[21px] text-white mb-4">Contact</p>
-                <a class="inline-block font-foco-regular text-[18px] text-white" href="mailto:info@auroradevelopment.co.nz">Email: info@auroradevelopment.co.nz</a>
-                <a class="inline-block font-foco-regular text-[18px] text-white" href="tel:6421806699">Phone: +64 (0)21 806 699</a>
-                <p class="inline-block font-foco-regular text-[18px] text-white mb-4">Office: 118 Lincoln Road,
+                <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="mailto:info@auroradevelopment.co.nz">Email:
+                    info@auroradevelopment.co.nz</a>
+                <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="tel:6421806699">Phone:
+                    +64 (0)21 806 699</a>
+                <p class="inline-block font-foco-regular text-[18px] text-white mb-4">
+                    Office: 118 Lincoln Road,
                     Henderson,
-                    Auckland, AKL 0610</p>
+                    Auckland, AKL 0610
+                </p>
                 <div class="flex">
                     <a class="inline-block" href="#">
                         <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/facebook_Asset 7.svg' ) ?>" alt="">
@@ -67,7 +71,6 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
                     <a class="inline-block" href="#">
                         <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/youtube_Asset 4.svg' ) ?>" alt="">
                     </a>
-
                 </div>
             </div>
         </div>

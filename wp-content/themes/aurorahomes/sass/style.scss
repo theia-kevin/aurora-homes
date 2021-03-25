@@ -27,7 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind screens;
+//@tailwind screens;
 
 @import '~swiper/swiper-bundle.min.css';
 @import '~simple-lightbox/dist/simpleLightbox.min.css';
@@ -52,7 +52,7 @@ body {
       @apply px-12;
 
       a {
-        @apply font-foco-light text-[21px] text-white;
+        @apply font-foco-light text-[21px] text-white transition-all duration-300 hover:text-aurora-blue-03;
       }
 
       &.active {
@@ -75,7 +75,7 @@ body {
         @apply py-4;
 
         a {
-          @apply font-foco-light text-[21px] text-white;
+          @apply font-foco-light text-[21px] text-white transition-all duration-300 hover:text-aurora-blue-02;
         }
 
         &.active {
