@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="absolute container mx-auto inset-0 h-36 z-50 hidden xl:flex items-end justify-between">
+<header class="absolute mx-[120px] inset-0 h-36 z-50 hidden xl:flex items-end justify-between">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img class="object-contain h-[70px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>

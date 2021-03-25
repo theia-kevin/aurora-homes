@@ -108,7 +108,7 @@ body {
 
 .wpcf7 {
   input[type="text"], input[type="email"], textarea {
-    @apply border border-aurora-grey-01 bg-white py-3 px-4 mb-5 w-full;
+    @apply font-foco-light text-[16px] border border-aurora-grey-01 bg-white py-3 px-4 mb-5 w-full;
 
     &.wpcf7-captchar {
       @apply w-32;
@@ -116,10 +116,10 @@ body {
   }
 
   select, {
-    @apply border border-aurora-grey-01 bg-white py-4 px-4 mb-5 w-full;
+    @apply font-foco-light text-[16px] border border-aurora-grey-01 bg-white py-4 px-4 mb-5 w-full;
   }
 
   input[type="submit"] {
-    @apply bg-aurora-blue-02 px-8 py-1 rounded-full font-light text-white;
+    @apply inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 rounded-full py-[10px] px-[30px] self-start cursor-pointer;
   }
 }

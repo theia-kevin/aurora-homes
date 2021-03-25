@@ -794,9 +794,9 @@ select{
 		max-width: 1280px;
 	}
 }
-@media (min-width: 1536px){
+@media (min-width: 1350px){
 	.container{
-		max-width: 1536px;
+		max-width: 1350px;
 	}
 }
 .visible{
@@ -884,9 +884,17 @@ select{
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
+.my-2{
+	margin-top: 0.5rem !important;
+	margin-bottom: 0.5rem !important;
+}
 .my-36{
 	margin-top: 9rem !important;
 	margin-bottom: 9rem !important;
+}
+.mx-\[120px\]{
+	margin-left: 120px !important;
+	margin-right: 120px !important;
 }
 .my-8{
 	margin-top: 2rem !important;
@@ -912,6 +920,9 @@ select{
 	margin-top: 6rem !important;
 	margin-bottom: 6rem !important;
 }
+.mb-\[100px\]{
+	margin-bottom: 100px !important;
+}
 .mb-4{
 	margin-bottom: 1rem !important;
 }
@@ -921,20 +932,20 @@ select{
 .mb-12{
 	margin-bottom: 3rem !important;
 }
+.mb-0{
+	margin-bottom: 0px !important;
+}
 .mb-8{
 	margin-bottom: 2rem !important;
 }
-.mb-0{
-	margin-bottom: 0px !important;
+.ml-auto{
+	margin-left: auto !important;
 }
 .mb-24{
 	margin-bottom: 6rem !important;
 }
 .mt-4{
 	margin-top: 1rem !important;
-}
-.ml-auto{
-	margin-left: auto !important;
 }
 .ml-1{
 	margin-left: 0.25rem !important;
@@ -951,15 +962,6 @@ select{
 .mb-20{
 	margin-bottom: 5rem !important;
 }
-.mb-\[130px\]{
-	margin-bottom: 130px !important;
-}
-.mb-\[120px\]{
-	margin-bottom: 120px !important;
-}
-.mb-\[100px\]{
-	margin-bottom: 100px !important;
-}
 .flex{
 	display: flex !important;
 }
@@ -975,8 +977,8 @@ select{
 .hidden{
 	display: none !important;
 }
-.h-\[700px\]{
-	height: 700px !important;
+.h-\[800px\]{
+	height: 800px !important;
 }
 .h-2\/6{
 	height: 33.333333% !important;
@@ -990,8 +992,14 @@ select{
 .h-4{
 	height: 1rem !important;
 }
-.h-full{
-	height: 100% !important;
+.h-\[950px\]{
+	height: 950px !important;
+}
+.h-\[400px\]{
+	height: 400px !important;
+}
+.h-\[300px\]{
+	height: 300px !important;
 }
 .h-36{
 	height: 9rem !important;
@@ -1001,6 +1009,9 @@ select{
 }
 .h-\[150px\]{
 	height: 150px !important;
+}
+.h-full{
+	height: 100% !important;
 }
 .h-10{
 	height: 2.5rem !important;
@@ -1014,14 +1025,14 @@ select{
 .h-20{
 	height: 5rem !important;
 }
-.h-\[800px\]{
-	height: 800px !important;
-}
 .w-full{
 	width: 100% !important;
 }
 .w-4{
 	width: 1rem !important;
+}
+.w-\[450px\]{
+	width: 450px !important;
 }
 .w-1\/2{
 	width: 50% !important;
@@ -1167,13 +1178,13 @@ select{
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(104, 152, 176, var(--tw-bg-opacity)) !important;
 }
-.bg-aurora-blue-01{
-	--tw-bg-opacity: 1 !important;
-	background-color: rgba(82, 112, 181, var(--tw-bg-opacity)) !important;
-}
 .bg-aurora-yellow-01{
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(243, 158, 44, var(--tw-bg-opacity)) !important;
+}
+.bg-aurora-blue-01{
+	--tw-bg-opacity: 1 !important;
+	background-color: rgba(82, 112, 181, var(--tw-bg-opacity)) !important;
 }
 .bg-aurora-blue-04{
 	--tw-bg-opacity: 1 !important;
@@ -1200,13 +1211,17 @@ select{
 .bg-no-repeat{
 	background-repeat: no-repeat !important;
 }
+.object-contain{
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+}
 .object-cover{
 	-o-object-fit: cover !important;
 	   object-fit: cover !important;
 }
-.object-contain{
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
+.object-center{
+	-o-object-position: center !important;
+	   object-position: center !important;
 }
 .p-8{
 	padding: 2rem !important;
@@ -1221,6 +1236,18 @@ select{
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
 }
+.py-\[10px\]{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.px-\[30px\]{
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.px-12{
+	padding-left: 3rem !important;
+	padding-right: 3rem !important;
+}
 .px-8{
 	padding-left: 2rem !important;
 	padding-right: 2rem !important;
@@ -1229,13 +1256,12 @@ select{
 	padding-top: 0.5rem !important;
 	padding-bottom: 0.5rem !important;
 }
-.px-12{
-	padding-left: 3rem !important;
-	padding-right: 3rem !important;
-}
 .py-4{
 	padding-top: 1rem !important;
 	padding-bottom: 1rem !important;
+}
+.pb-\[30px\]{
+	padding-bottom: 30px !important;
 }
 .pb-12{
 	padding-bottom: 3rem !important;
@@ -1276,6 +1302,12 @@ select{
 .font-foco-bold{
 	font-family: foco-bold, sans-serif !important;
 }
+.font-foco-black{
+	font-family: foco-black, sans-serif !important;
+}
+.font-foco-light{
+	font-family: foco-light, sans-serif !important;
+}
 .text-\[16px\]{
 	font-size: 16px !important;
 }
@@ -1285,25 +1317,40 @@ select{
 .text-\[18px\]{
 	font-size: 18px !important;
 }
+.text-\[100px\]{
+	font-size: 100px !important;
+}
+.text-\[24px\]{
+	font-size: 24px !important;
+}
+.text-\[50px\]{
+	font-size: 50px !important;
+}
+.text-\[36px\]{
+	font-size: 36px !important;
+}
+.text-\[14px\]{
+	font-size: 14px !important;
+}
 .text-4xl{
 	font-size: 2.25rem !important;
 	line-height: 2.5rem !important;
-}
-.text-2xl{
-	font-size: 1.5rem !important;
-	line-height: 2rem !important;
 }
 .text-5xl{
 	font-size: 3rem !important;
 	line-height: 1 !important;
 }
-.text-xl{
-	font-size: 1.25rem !important;
-	line-height: 1.75rem !important;
-}
 .text-3xl{
 	font-size: 1.875rem !important;
 	line-height: 2.25rem !important;
+}
+.text-2xl{
+	font-size: 1.5rem !important;
+	line-height: 2rem !important;
+}
+.text-xl{
+	font-size: 1.25rem !important;
+	line-height: 1.75rem !important;
 }
 .text-lg{
 	font-size: 1.125rem !important;
@@ -1319,20 +1366,23 @@ select{
 .font-light{
 	font-weight: 300 !important;
 }
-.font-bold{
-	font-weight: 700 !important;
-}
 .font-normal{
 	font-weight: 400 !important;
+}
+.font-bold{
+	font-weight: 700 !important;
 }
 .uppercase{
 	text-transform: uppercase !important;
 }
+.leading-\[110px\]{
+	line-height: 110px !important;
+}
+.leading-\[60px\]{
+	line-height: 60px !important;
+}
 .leading-tight{
 	line-height: 1.25 !important;
-}
-.tracking-wide{
-	letter-spacing: 0.025em !important;
 }
 .text-white{
 	--tw-text-opacity: 1 !important;
@@ -1388,11 +1438,8 @@ select{
 	outline-offset: 2px !important;
 }
 @media (min-width: 1024px){
-	.lg\:order-1{
-		order: 1 !important;
-	}
-	.lg\:order-2{
-		order: 2 !important;
+	.lg\:col-span-7{
+		grid-column: span 7 / span 7 !important;
 	}
 	.lg\:col-span-5{
 		grid-column: span 5 / span 5 !important;
@@ -1400,35 +1447,11 @@ select{
 	.lg\:col-span-6{
 		grid-column: span 6 / span 6 !important;
 	}
-	.lg\:col-span-1{
-		grid-column: span 1 / span 1 !important;
-	}
-	.lg\:col-span-7{
-		grid-column: span 7 / span 7 !important;
-	}
 	.lg\:col-span-4{
 		grid-column: span 4 / span 4 !important;
 	}
 	.lg\:col-start-7{
 		grid-column-start: 7 !important;
-	}
-	.lg\:col-start-1{
-		grid-column-start: 1 !important;
-	}
-	.lg\:col-start-2{
-		grid-column-start: 2 !important;
-	}
-	.lg\:col-start-3{
-		grid-column-start: 3 !important;
-	}
-	.lg\:row-start-1{
-		grid-row-start: 1 !important;
-	}
-	.lg\:row-start-2{
-		grid-row-start: 2 !important;
-	}
-	.lg\:row-start-3{
-		grid-row-start: 3 !important;
 	}
 	.lg\:my-24{
 		margin-top: 6rem !important;
@@ -1441,17 +1464,14 @@ select{
 	.lg\:mb-36{
 		margin-bottom: 9rem !important;
 	}
-	.lg\:mb-0{
-		margin-bottom: 0px !important;
-	}
-	.lg\:mb-12{
-		margin-bottom: 3rem !important;
-	}
 	.lg\:mb-48{
 		margin-bottom: 12rem !important;
 	}
 	.lg\:mb-28{
 		margin-bottom: 7rem !important;
+	}
+	.lg\:mb-0{
+		margin-bottom: 0px !important;
 	}
 	.lg\:mb-16{
 		margin-bottom: 4rem !important;
@@ -1468,14 +1488,8 @@ select{
 	.lg\:h-96{
 		height: 24rem !important;
 	}
-	.lg\:grid-rows-3{
-		grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
-	}
 	.lg\:justify-end{
 		justify-content: flex-end !important;
-	}
-	.lg\:gap-12{
-		gap: 3rem !important;
 	}
 	.lg\:gap-16{
 		gap: 4rem !important;
@@ -1499,9 +1513,6 @@ select{
 		padding-left: 2rem !important;
 		padding-right: 2rem !important;
 	}
-	.lg\:pb-24{
-		padding-bottom: 6rem !important;
-	}
 	.lg\:pb-36{
 		padding-bottom: 9rem !important;
 	}
@@ -1515,6 +1526,12 @@ select{
 	}
 }
 @media (min-width: 1280px){
+	.xl\:order-1{
+		order: 1 !important;
+	}
+	.xl\:order-2{
+		order: 2 !important;
+	}
 	.xl\:col-span-5{
 		grid-column: span 5 / span 5 !important;
 	}
@@ -1524,11 +1541,41 @@ select{
 	.xl\:col-span-4{
 		grid-column: span 4 / span 4 !important;
 	}
-	.xl\:mb-8{
-		margin-bottom: 2rem !important;
+	.xl\:col-span-6{
+		grid-column: span 6 / span 6 !important;
+	}
+	.xl\:col-span-1{
+		grid-column: span 1 / span 1 !important;
+	}
+	.xl\:col-start-7{
+		grid-column-start: 7 !important;
+	}
+	.xl\:col-start-1{
+		grid-column-start: 1 !important;
+	}
+	.xl\:col-start-2{
+		grid-column-start: 2 !important;
+	}
+	.xl\:col-start-3{
+		grid-column-start: 3 !important;
+	}
+	.xl\:row-start-1{
+		grid-row-start: 1 !important;
+	}
+	.xl\:row-start-2{
+		grid-row-start: 2 !important;
+	}
+	.xl\:row-start-3{
+		grid-row-start: 3 !important;
 	}
 	.xl\:mb-0{
 		margin-bottom: 0px !important;
+	}
+	.xl\:mb-36{
+		margin-bottom: 9rem !important;
+	}
+	.xl\:mb-12{
+		margin-bottom: 3rem !important;
 	}
 	.xl\:flex{
 		display: flex !important;
@@ -1542,15 +1589,24 @@ select{
 	.xl\:h-3\/6{
 		height: 50% !important;
 	}
+	.xl\:grid-rows-3{
+		grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+	}
 	.xl\:items-end{
 		align-items: flex-end !important;
+	}
+	.xl\:gap-12{
+		gap: 3rem !important;
 	}
 	.xl\:px-0{
 		padding-left: 0px !important;
 		padding-right: 0px !important;
 	}
+	.xl\:pb-24{
+		padding-bottom: 6rem !important;
+	}
 }
-@media (min-width: 1536px){
+@media (min-width: 1350px){
 	.\32xl\:-right-8{
 		right: -2rem !important;
 	}
@@ -1658,7 +1714,7 @@ body::before{
 	}
 }
 
-@media (min-width: 1536px){
+@media (min-width: 1350px){
 	body::before{
 		content: 'screen: 2xl';
 	}
@@ -1750,6 +1806,8 @@ body::before{
 	padding-bottom: 0.75rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	font-family: foco-light, sans-serif;
+	font-size: 16px;
 }
 .wpcf7 input[type=text].wpcf7-captchar, .wpcf7 input[type=email].wpcf7-captchar, .wpcf7 textarea.wpcf7-captchar{
 	width: 8rem;
@@ -1766,16 +1824,22 @@ body::before{
 	padding-bottom: 1rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	font-family: foco-light, sans-serif;
+	font-size: 16px;
 }
 .wpcf7 input[type=submit]{
+	display: inline-block;
+	cursor: pointer;
+	align-self: flex-start;
 	border-radius: 9999px;
 	--tw-bg-opacity: 1;
 	background-color: rgba(16, 14, 71, var(--tw-bg-opacity));
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-	font-weight: 300;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: foco-light, sans-serif;
+	font-size: 16px;
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
