@@ -924,14 +924,11 @@ select{
 .mb-\[50px\]{
 	margin-bottom: 50px !important;
 }
+.mb-\[200px\]{
+	margin-bottom: 200px !important;
+}
 .mb-24{
 	margin-bottom: 6rem !important;
-}
-.mb-12{
-	margin-bottom: 3rem !important;
-}
-.mt-4{
-	margin-top: 1rem !important;
 }
 .mb-8{
 	margin-bottom: 2rem !important;
@@ -944,6 +941,9 @@ select{
 }
 .ml-1{
 	margin-left: 0.25rem !important;
+}
+.mb-12{
+	margin-bottom: 3rem !important;
 }
 .mt-0{
 	margin-top: 0px !important;
@@ -960,11 +960,20 @@ select{
 .mb-0{
 	margin-bottom: 0px !important;
 }
-.mb-\[200px\]{
-	margin-bottom: 200px !important;
+.mb-\[270px\]{
+	margin-bottom: 270px !important;
 }
 .mb-\[250px\]{
 	margin-bottom: 250px !important;
+}
+.mb-\[150px\]{
+	margin-bottom: 150px !important;
+}
+.mb-\[30px\]\]{
+	margin-bottom: 30px] !important;
+}
+.mb-\[30px\]{
+	margin-bottom: 30px !important;
 }
 .flex{
 	display: flex !important;
@@ -1026,6 +1035,9 @@ select{
 .h-20{
 	height: 5rem !important;
 }
+.h-\[280px\]{
+	height: 280px !important;
+}
 .w-full{
 	width: 100% !important;
 }
@@ -1068,6 +1080,48 @@ select{
 }
 .translate-y-0{
 	--tw-translate-y: 0px !important;
+}
+@-webkit-keyframes bounce{
+	0%, 100%{
+		transform: translateY(-25%);
+		-webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+		        animation-timing-function: cubic-bezier(0.8,0,1,1);
+	}
+	50%{
+		transform: none;
+		-webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+		        animation-timing-function: cubic-bezier(0,0,0.2,1);
+	}
+}
+@keyframes bounce{
+	0%, 100%{
+		transform: translateY(-25%);
+		-webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+		        animation-timing-function: cubic-bezier(0.8,0,1,1);
+	}
+	50%{
+		transform: none;
+		-webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+		        animation-timing-function: cubic-bezier(0,0,0.2,1);
+	}
+}
+.animate-bounce{
+	-webkit-animation: bounce 1s infinite !important;
+	        animation: bounce 1s infinite !important;
+}
+@-webkit-keyframes pulse{
+	50%{
+		opacity: .5;
+	}
+}
+@keyframes pulse{
+	50%{
+		opacity: .5;
+	}
+}
+.animate-pulse{
+	-webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+	        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
 }
 .cursor-pointer{
 	cursor: pointer !important;
@@ -1147,6 +1201,12 @@ select{
 .border{
 	border-width: 1px !important;
 }
+.border-\[5px\]{
+	border-width: 5px !important;
+}
+.border-\[3px\]{
+	border-width: 3px !important;
+}
 .border-b{
 	border-bottom-width: 1px !important;
 }
@@ -1161,6 +1221,14 @@ select{
 .border-aurora-blue-02{
 	--tw-border-opacity: 1 !important;
 	border-color: rgba(16, 14, 71, var(--tw-border-opacity)) !important;
+}
+.border-aurora-red-01{
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(199, 61, 86, var(--tw-border-opacity)) !important;
+}
+.border-aurora-yellow-01{
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(243, 158, 44, var(--tw-border-opacity)) !important;
 }
 .bg-aurora-blue-02{
 	--tw-bg-opacity: 1 !important;
@@ -1191,16 +1259,6 @@ select{
 }
 .bg-opacity-30{
 	--tw-bg-opacity: 0.3 !important;
-}
-.from-yellow-400{
-	--tw-gradient-from: #fbbf24 !important;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 191, 36, 0)) !important;
-}
-.via-red-500{
-	--tw-gradient-stops: var(--tw-gradient-from), #ef4444, var(--tw-gradient-to, rgba(239, 68, 68, 0)) !important;
-}
-.to-pink-500{
-	--tw-gradient-to: #ec4899 !important;
 }
 .bg-cover{
 	background-size: cover !important;
@@ -1244,6 +1302,9 @@ select{
 .p-2{
 	padding: 0.5rem !important;
 }
+.p-\[60px\]{
+	padding: 60px !important;
+}
 .px-4{
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
@@ -1280,6 +1341,18 @@ select{
 	padding-top: 1rem !important;
 	padding-bottom: 1rem !important;
 }
+.py-\[5px\]{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+.px-\[20px\]{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.py-\[8px\]{
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+}
 .pb-\[30px\]{
 	padding-bottom: 30px !important;
 }
@@ -1295,8 +1368,14 @@ select{
 .pb-\[15px\]{
 	padding-bottom: 15px !important;
 }
-.pb-24{
-	padding-bottom: 6rem !important;
+.pb-\[100px\]{
+	padding-bottom: 100px !important;
+}
+.pt-\[20px\]{
+	padding-top: 20px !important;
+}
+.pb-\[60px\]{
+	padding-bottom: 60px !important;
 }
 .pb-8{
 	padding-bottom: 2rem !important;
@@ -1315,27 +1394,6 @@ select{
 }
 .pr-4{
 	padding-right: 1rem !important;
-}
-.pb-\[100px\]{
-	padding-bottom: 100px !important;
-}
-.pt-\[50px\]{
-	padding-top: 50px !important;
-}
-.pb-\[80px\]{
-	padding-bottom: 80px !important;
-}
-.pt-\[40px\]{
-	padding-top: 40px !important;
-}
-.pt-\[30px\]{
-	padding-top: 30px !important;
-}
-.pb-\[60px\]{
-	padding-bottom: 60px !important;
-}
-.pt-\[20px\]{
-	padding-top: 20px !important;
 }
 .text-left{
 	text-align: left !important;
@@ -1472,13 +1530,13 @@ select{
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 	transition-duration: 150ms !important;
 }
-.transition{
-	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform !important;
+.transition-opacity{
+	transition-property: opacity !important;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 	transition-duration: 150ms !important;
 }
-.transition-opacity{
-	transition-property: opacity !important;
+.transition{
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform !important;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 	transition-duration: 150ms !important;
 }
@@ -1696,8 +1754,12 @@ body::before{
 .hover\:-translate-x-1:hover{
 	--tw-translate-x: -0.25rem !important;
 }
-.hover\:bg-gradient-to-r:hover{
-	background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+.hover\:border-\[5px\]:hover{
+	border-width: 5px !important;
+}
+.hover\:border-aurora-blue-02:hover{
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(16, 14, 71, var(--tw-border-opacity)) !important;
 }
 .hover\:text-aurora-blue-03:hover{
 	--tw-text-opacity: 1 !important;

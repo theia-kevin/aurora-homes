@@ -8,7 +8,7 @@ get_header();
         <div data-aos="fade-right" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
             <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase">Building For</p>
             <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase pb-[30px]">Your Dream</p>
-            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 rounded-full py-[10px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
+            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 border-[5px] border-aurora-red-01 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                 Contact Us
             </a>
         </div>
@@ -22,7 +22,7 @@ get_header();
                     ambitions. Construction is not only our job but also our pursuit. To complete high-
                     quality work and provide comprehensive services is our commitment to customers,
                     and it is also our requirement of ourselves.</p>
-                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-end transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
+                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
                     More</a>
             </div>
             <div class="col-span-12 xl:col-start-7 xl:col-span-6 relative order-1 xl:order-2 mb-[50px]">
@@ -30,7 +30,7 @@ get_header();
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[50px]">Aurora, Your
                     Reliable Partner</p>
                 <img class="object-cover object-center h-[400px] w-full relative z-40 pb-[50px] pr-[50px]" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
-                <img class="absolute bottom-[0] right-[0px]" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
+                <img class="object-fit absolute bottom-[0] right-[0px] animate-pulse" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
             </div>
         </div>
         <div class="grid grid-cols-12 mb-[50px]">
@@ -50,13 +50,13 @@ get_header();
                         <li class="font-foco-light text-[16px] text-aurora-grey-02">House structure design</li>
                         <li class="font-foco-light text-[16px] text-aurora-grey-02">Indoor facility configuration</li>
                     </ul>
-                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-end" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
+                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">Learn
                         More</a>
                 </div>
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="relative">
+    <div class="relative" data-aos="fade-up">
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
         </div>
         <div class="container mx-auto mb-[200px] px-4 pb-[100px] relative z-40">
@@ -168,25 +168,25 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" x-data="{ tab: 'completed' }">
+    <div class="mb-[250px]" data-aos="fade-up" x-data="{ tab: 'completed' }">
         <div class="container mx-auto px-4">
             <div class="flex flex-col">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">Our Work</p>
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Projects</p>
                 <div class="flex flex-wrap pt-[20px] pb-[60px]">
-                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-start cursor-pointer mr-4 my-2"
+                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-4 my-2"
                          x-on:click="tab = 'completed'"
-                         x-bind:class="{'bg-aurora-yellow-01' : tab === 'completed'}"
+                         x-bind:class="{'bg-aurora-yellow-01' : tab === 'completed', 'border-aurora-yellow-01' : tab === 'completed'}"
                     >
                         Completed
                     </div>
-                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 rounded-full py-[10px] px-[30px] self-start cursor-pointer mr-4 my-2"
+                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-4 my-2"
                          x-on:click="tab = 'workinprogress'"
-                         x-bind:class="{'bg-aurora-yellow-01' : tab === 'workinprogress'}"
+                         x-bind:class="{'bg-aurora-yellow-01' : tab === 'workinprogress', 'border-aurora-yellow-01' : tab === 'workinprogress'}"
                     >
                         Work in Progress
                     </div>
-                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 rounded-full py-[10px] px-[30px] self-start my-2"
+                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 border-[5px] border-aurora-red-01 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 my-2"
                        href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                         Contact Us
                     </a>
@@ -249,7 +249,7 @@ get_header();
                             <a href="<?php the_permalink(); ?>" class="block relative" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
                                 <div class="bg-aurora-blue-02 bg-opacity-50 absolute inset-0 z-30" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                                 </div>
-                                <div class="absolute inset-0 flex flex-col justify-center items-end p-16 xl:p-16 xl:p-8 z-40" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                                <div class="absolute inset-0 flex flex-col justify-center items-end p-[60px] z-40" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                                     <p class="font-foco-bold text-[18px] text-white uppercase text-right">Our Work</p>
                                     <p class="font-foco-black text-[36px] text-white uppercase text-right"><?php the_title(); ?></p>
                                     <p class="font-foco-regular text-[14px] text-white text-right w-1/2"><?php the_field( 'short_description' ); ?></p>
@@ -264,9 +264,9 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="container mx-auto mb-24 px-4">
+    <div data-aos="fade-up" class="container mx-auto mb-[150px] px-4">
         <p class="font-foco-black text-[36px] text-aurora-blue-06">Make An Enquiry</p>
-        <p class="font-foco-light text-[14px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-8 mb-8">Leave us a message.</p>
+        <p class="font-foco-light text-[14px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-[30px] mb-[30px]">Leave us a message.</p>
         <div>
 			<?php echo do_shortcode( '[contact-form-7 id="27" title="Contact form 1"]' ); ?>
         </div>
