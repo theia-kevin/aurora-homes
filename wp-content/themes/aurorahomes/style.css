@@ -847,6 +847,9 @@ select{
 .right-12{
 	right: 3rem !important;
 }
+.-right-8{
+	right: -2rem !important;
+}
 .z-40{
 	z-index: 40 !important;
 }
@@ -962,6 +965,18 @@ select{
 .mb-20{
 	margin-bottom: 5rem !important;
 }
+.mb-\[150px\]{
+	margin-bottom: 150px !important;
+}
+.mb-\[50px\]{
+	margin-bottom: 50px !important;
+}
+.mt-auto{
+	margin-top: auto !important;
+}
+.mb-36{
+	margin-bottom: 9rem !important;
+}
 .flex{
 	display: flex !important;
 }
@@ -1025,6 +1040,9 @@ select{
 .h-20{
 	height: 5rem !important;
 }
+.h-\[250px\]{
+	height: 250px !important;
+}
 .w-full{
 	width: 100% !important;
 }
@@ -1045,6 +1063,9 @@ select{
 }
 .w-4\/5{
 	width: 80% !important;
+}
+.w-\[400px\]{
+	width: 400px !important;
 }
 .max-w-full{
 	max-width: 100% !important;
@@ -1125,11 +1146,22 @@ select{
 .gap-0{
 	gap: 0px !important;
 }
+.gap-12{
+	gap: 3rem !important;
+}
 .gap-y-12{
 	row-gap: 3rem !important;
 }
 .gap-y-16{
 	row-gap: 4rem !important;
+}
+.gap-x-12{
+	-moz-column-gap: 3rem !important;
+	     column-gap: 3rem !important;
+}
+.gap-x-0{
+	-moz-column-gap: 0px !important;
+	     column-gap: 0px !important;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
 	--tw-space-y-reverse: 0 !important;
@@ -1232,6 +1264,9 @@ select{
 .p-2{
 	padding: 0.5rem !important;
 }
+.p-16{
+	padding: 4rem !important;
+}
 .px-4{
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
@@ -1283,6 +1318,9 @@ select{
 }
 .pr-4{
 	padding-right: 1rem !important;
+}
+.pb-24{
+	padding-bottom: 6rem !important;
 }
 .text-right{
 	text-align: right !important;
@@ -1526,6 +1564,9 @@ select{
 	}
 }
 @media (min-width: 1280px){
+	.xl\:-right-8{
+		right: -2rem !important;
+	}
 	.xl\:order-1{
 		order: 1 !important;
 	}
@@ -1580,6 +1621,9 @@ select{
 	.xl\:flex{
 		display: flex !important;
 	}
+	.xl\:block{
+		display: block !important;
+	}
 	.xl\:hidden{
 		display: none !important;
 	}
@@ -1589,6 +1633,9 @@ select{
 	.xl\:h-3\/6{
 		height: 50% !important;
 	}
+	.xl\:w-\[400px\]{
+		width: 400px !important;
+	}
 	.xl\:grid-rows-3{
 		grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
 	}
@@ -1597,6 +1644,19 @@ select{
 	}
 	.xl\:gap-12{
 		gap: 3rem !important;
+	}
+	.xl\:gap-24{
+		gap: 6rem !important;
+	}
+	.xl\:gap-x-12{
+		-moz-column-gap: 3rem !important;
+		     column-gap: 3rem !important;
+	}
+	.xl\:p-16{
+		padding: 4rem !important;
+	}
+	.xl\:p-8{
+		padding: 2rem !important;
 	}
 	.xl\:px-0{
 		padding-left: 0px !important;
