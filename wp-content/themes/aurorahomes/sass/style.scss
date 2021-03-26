@@ -120,6 +120,6 @@ body {
   }
 
   input[type="submit"] {
-    @apply inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 rounded-full py-[10px] px-[30px] self-start cursor-pointer;
+    @apply inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] self-start cursor-pointer transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01;
   }
 }
