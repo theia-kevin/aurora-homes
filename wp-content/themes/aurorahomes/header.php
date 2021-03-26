@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header id="header" class="fixed z-50 inset-0 px-[120px] h-[80px] hidden xl:flex items-center justify-between py-16 transition-all duration-300">
+<header data-aos="fade-down" id="header" class="fixed z-50 inset-0 px-[120px] h-[80px] hidden xl:flex items-center justify-between py-16 transition-all duration-300">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img class="object-contain h-[50px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>
@@ -21,7 +21,7 @@
 	);
 	?>
 </header>
-<header id="header-mobile" class="mobile container mx-auto fixed z-50 inset-0 h-[80px] flex xl:hidden items-center justify-between transition-all duration-300" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
+<header data-aos="fade-down" id="header-mobile" class="mobile w-full px-[30px] fixed z-50 inset-0 h-[80px] flex xl:hidden items-center justify-between transition-all duration-300" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img class="object-contain h-[50px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>
@@ -34,7 +34,7 @@
         <div class="fixed inset-0" @click="sidebarOpen = false" x-show="sidebarOpen" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
             <div class="absolute inset-0"></div>
         </div>
-        <div class="relative h-full w-full flex flex-1 flex-col ml-auto pt-[100px] bg-aurora-blue-01" x-show="sidebarOpen" x-transition:enter="transition ease-in-out duration-300 transform" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition ease-in-out duration-300 transform" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full">
+        <div class="relative h-screen w-full flex flex-1 flex-col ml-auto pt-[100px] bg-aurora-blue-01" x-show="sidebarOpen" x-transition:enter="transition ease-in-out duration-300 transform" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition ease-in-out duration-300 transform" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full">
             <div class="absolute top-0 right-0 p-[30px]">
                 <button class="ml-1 flex items-center justify-center h-[40px] w-[40px] rounded-full focus:outline-none" x-show="sidebarOpen" @click="sidebarOpen = false">
                     <svg class="h-[40px] w-[40px] text-white transition-all duration-300 hover:text-aurora-blue-02" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

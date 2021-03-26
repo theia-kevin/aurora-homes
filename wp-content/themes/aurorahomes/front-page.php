@@ -29,18 +29,18 @@ get_header();
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">About Us</p>
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[50px]">Aurora, Your
                     Reliable Partner</p>
-                <img class="object-cover object-center h-[400px] w-full relative z-40 pb-[50px] pr-[50px]" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
-                <img class="object-fit absolute bottom-[0] right-[0px] animate-pulse" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
+                <img class="object-cover object-center h-[400px] w-full relative z-40 pb-[30px] pr-[30px]" src="<?php echo get_theme_file_uri( '/images/talk.jpg' ); ?>" alt="">
+                <img class="object-contain absolute bottom-[0px] right-[0px] animate-pulse" src="<?php echo get_theme_file_uri( '/images/Group 316.png' ); ?>" alt="">
             </div>
         </div>
-        <div class="grid grid-cols-12 mb-[50px]">
+        <div class="grid grid-cols-12 mb-[100px]">
             <div class="col-span-12 xl:col-span-5 flex flex-col justify-start">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">What We Do</p>
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">The Highest
                     Quality Work, The Most Intimate Service.</p>
             </div>
             <div class="col-span-12 xl:col-start-7 flex items-end justify-end">
-                <div class="flex flex-col justify-end h-[350px] w-[450px]">
+                <div class="flex flex-col justify-end h-[350px] w-[350px]">
                     <p class="font-foco-light text-[16px] text-aurora-grey-02 pb-[15px]">Aurora provides variety of services
                         by priortising customers' needs:</p>
                     <ul class="list-decimal list-inside pb-[50px]">
@@ -59,7 +59,7 @@ get_header();
     <div class="relative" data-aos="fade-up">
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
         </div>
-        <div class="container mx-auto mb-[200px] px-4 pb-[100px] relative z-40">
+        <div class="container mx-auto mb-[100px] px-4 pb-[100px] relative z-40">
             <div class="grid grid-cols-12 gap-y-12 gap-x-0 xl:gap-x-12">
                 <div class="col-span-12 xl:col-span-4 relative cursor-pointer h-[300px] w-[400px] mx-auto" x-data="{ swapImage: false }" x-on:mouseover="swapImage = true" x-on:mouseover.away="swapImage = false">
                     <div class="absolute inset-0 bg-cover bg-no-repeat bg-center" style="background-image: url('<?php echo get_theme_file_uri( '/images/UgS4y0.png' ); ?>');"
@@ -168,25 +168,25 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="mb-[250px]" data-aos="fade-up" x-data="{ tab: 'completed' }">
+    <div class="mb-[100px]" data-aos="fade-up" x-data="{ tab: 'completed' }">
         <div class="container mx-auto px-4">
             <div class="flex flex-col">
                 <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">Our Work</p>
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Projects</p>
                 <div class="flex flex-wrap pt-[20px] pb-[60px]">
-                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-4 my-2"
+                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-[15px] my-[5px]"
                          x-on:click="tab = 'completed'"
                          x-bind:class="{'bg-aurora-yellow-01' : tab === 'completed', 'border-aurora-yellow-01' : tab === 'completed'}"
                     >
                         Completed
                     </div>
-                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-4 my-2"
+                    <div class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 cursor-pointer mr-[15px] my-[5px]"
                          x-on:click="tab = 'workinprogress'"
                          x-bind:class="{'bg-aurora-yellow-01' : tab === 'workinprogress', 'border-aurora-yellow-01' : tab === 'workinprogress'}"
                     >
                         Work in Progress
                     </div>
-                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 border-[5px] border-aurora-red-01 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 my-2"
+                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 border-[5px] border-aurora-red-01 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 my-[5px]"
                        href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                         Contact Us
                     </a>
@@ -264,7 +264,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="container mx-auto mb-[150px] px-4">
+    <div data-aos="fade-up" class="container mx-auto mb-[100px] px-4">
         <p class="font-foco-black text-[36px] text-aurora-blue-06">Make An Enquiry</p>
         <p class="font-foco-light text-[14px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-[30px] mb-[30px]">Leave us a message.</p>
         <div>
