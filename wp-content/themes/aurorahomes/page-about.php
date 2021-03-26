@@ -6,8 +6,10 @@ get_header();
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-right" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase">Prioritising</p>
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase pb-[30px]">Your Needs</p>
+            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase">
+                Prioritising</p>
+            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase pb-[30px]">
+                Your Needs</p>
             <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                 Contact Us
             </a>
@@ -55,7 +57,8 @@ get_header();
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-12 gap-y-16 xl:gap-16">
                     <div class="col-span-12">
-                        <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Why Choose Us</p>
+                        <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Why Choose
+                            Us</p>
                     </div>
                     <div class="col-span-12 xl:col-span-6">
                         <div class="relative inline-block">
