@@ -59,17 +59,17 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
                     Auckland, AKL 0610
                 </p>
                 <div class="flex">
-                    <a class="inline-block" href="#">
-                        <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/facebook_Asset 7.svg' ) ?>" alt="">
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain h-[15px] w-[15px]" src="<?php echo get_theme_file_uri( '/images/facebook_Asset 7.svg' ) ?>" alt="">
                     </a>
-                    <a class="inline-block" href="#">
-                        <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/linkedin_Asset 5.svg' ) ?>" alt="">
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain h-[15px] w-[15px]" src="<?php echo get_theme_file_uri( '/images/twitter_Asset 3.svg' ) ?>" alt="">
                     </a>
-                    <a class="inline-block" href="#">
-                        <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/twitter_Asset 3.svg' ) ?>" alt="">
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain h-[15px] w-[15px]" src="<?php echo get_theme_file_uri( '/images/youtube_Asset 4.svg' ) ?>" alt="">
                     </a>
-                    <a class="inline-block" href="#">
-                        <img class="h-4 w-4 mr-4" src="<?php echo get_theme_file_uri( '/images/youtube_Asset 4.svg' ) ?>" alt="">
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain h-[15px] w-[15px]" src="<?php echo get_theme_file_uri( '/images/linkedin_Asset 5.svg' ) ?>" alt="">
                     </a>
                 </div>
             </div>

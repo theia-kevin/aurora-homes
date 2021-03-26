@@ -1058,6 +1058,18 @@ select{
 .h-\[430px\]{
 	height: 430px !important;
 }
+.h-\[\]{
+	height:  !important;
+}
+.h-\[15px\]{
+	height: 15px !important;
+}
+.h-\[550px\]{
+	height: 550px !important;
+}
+.h-\[650px\]{
+	height: 650px !important;
+}
 .w-full{
 	width: 100% !important;
 }
@@ -1081,6 +1093,9 @@ select{
 }
 .w-4\/5{
 	width: 80% !important;
+}
+.w-\[15px\]{
+	width: 15px !important;
 }
 .flex-1{
 	flex: 1 1 0% !important;
@@ -1909,6 +1924,9 @@ body::before{
 	}
 	.xl\:h-3\/6{
 		height: 50% !important;
+	}
+	.xl\:h-\[950px\]{
+		height: 950px !important;
 	}
 	.xl\:justify-between{
 		justify-content: space-between !important;

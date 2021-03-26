@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-[950px] mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
+    <div class="relative h-[650px] xl:h-[950px] mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
@@ -19,11 +19,21 @@ get_header();
                 <p class="font-foco-regular text-[24px] text-aurora-grey-02">Email: info@auroradevelopment.co.nz</p>
                 <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[15px]">Phone: +64 (0)21 806 699</p>
                 <div class="flex mb-[50px]">
-                    <img class="object-contain mr-[30px]" src="<?php echo get_theme_file_uri( '/images/Group 216.png' ); ?>" alt="">
-                    <img class="object-contain mr-[30px]" src="<?php echo get_theme_file_uri( '/images/Group 217.png' ); ?>" alt="">
-                    <img class="object-contain mr-[30px]" src="<?php echo get_theme_file_uri( '/images/Group 218.png' ); ?>" alt="">
-                    <img class="object-contain mr-[30px]" src="<?php echo get_theme_file_uri( '/images/Path 1582.png' ); ?>" alt="">
-                    <img class="object-contain mr-[30px]" src="<?php echo get_theme_file_uri( '/images/Path 1583.png' ); ?>" alt="">
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Group 216.png' ); ?>" alt="">
+                    </a>
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Path 1583.png' ); ?>" alt="">
+                    </a>
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Path 1582.png' ); ?>" alt="">
+                    </a>
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Group 218.png' ); ?>" alt="">
+                    </a>
+                    <a class="inline-block mr-[30px]" href="#">
+                        <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Group 217.png' ); ?>" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-span-12 xl:col-span-7 xl:col-start-6 relative">
