@@ -25,7 +25,7 @@
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img class="object-contain h-[50px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
     </a>
-    <div class="cursor-pointer mr-[30px]" @click.stop="sidebarOpen = true">
+    <div class="cursor-pointer" @click.stop="sidebarOpen = true">
         <svg class="h-[40px] w-[40px] text-white transition-all duration-300 hover:text-aurora-blue-03" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>

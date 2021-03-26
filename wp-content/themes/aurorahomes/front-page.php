@@ -3,7 +3,7 @@ get_header();
 ?>
     <div class="relative h-[950px] mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-        <div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
+        <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-right" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
             <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase">Building For</p>
@@ -57,7 +57,7 @@ get_header();
         </div>
     </div>
     <div class="relative" data-aos="fade-up">
-        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height:500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
+        <div class="absolute bottom-0 h-[500px] w-full bg-cover bg-no-repeat z-30" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 3.svg' ); ?>');">
         </div>
         <div class="container mx-auto mb-[100px] px-4 pb-[100px] relative z-40">
             <div class="grid grid-cols-12 gap-y-12 gap-x-0 xl:gap-x-12">

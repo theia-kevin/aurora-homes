@@ -826,8 +826,8 @@ select{
 .bottom-0{
 	bottom: 0px !important;
 }
-.bottom-\[0\]{
-	bottom: 0 !important;
+.bottom-\[0px\]{
+	bottom: 0px !important;
 }
 .right-\[0px\]{
 	right: 0px !important;
@@ -859,14 +859,14 @@ select{
 .-bottom-12{
 	bottom: -3rem !important;
 }
-.left-12{
-	left: 3rem !important;
-}
 .right-12{
 	right: 3rem !important;
 }
-.bottom-\[0px\]{
-	bottom: 0px !important;
+.left-12{
+	left: 3rem !important;
+}
+.left-\[0px\]{
+	left: 0px !important;
 }
 .z-40{
 	z-index: 40 !important;
@@ -901,6 +901,33 @@ select{
 .col-span-8{
 	grid-column: span 8 / span 8 !important;
 }
+.col-span-5{
+	grid-column: span 5 / span 5 !important;
+}
+.col-span-6{
+	grid-column: span 6 / span 6 !important;
+}
+.col-span-7{
+	grid-column: span 7 / span 7 !important;
+}
+.col-end-11{
+	grid-column-end: 11 !important;
+}
+.col-start-7{
+	grid-column-start: 7 !important;
+}
+.col-start-3{
+	grid-column-start: 3 !important;
+}
+.col-start-6{
+	grid-column-start: 6 !important;
+}
+.col-start-9{
+	grid-column-start: 9 !important;
+}
+.col-start-2{
+	grid-column-start: 2 !important;
+}
 .mx-auto{
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -929,13 +956,17 @@ select{
 	margin-top: 3rem !important;
 	margin-bottom: 3rem !important;
 }
-.my-24{
-	margin-top: 6rem !important;
-	margin-bottom: 6rem !important;
+.my-\[150px\]{
+	margin-top: 150px !important;
+	margin-bottom: 150px !important;
 }
 .my-8{
 	margin-top: 2rem !important;
 	margin-bottom: 2rem !important;
+}
+.my-\[100px\]{
+	margin-top: 100px !important;
+	margin-bottom: 100px !important;
 }
 .mb-\[100px\]{
 	margin-bottom: 100px !important;
@@ -985,6 +1016,12 @@ select{
 .mr-8{
 	margin-right: 2rem !important;
 }
+.mb-\[40px\]{
+	margin-bottom: 40px !important;
+}
+.mb-\[150px\]{
+	margin-bottom: 150px !important;
+}
 .flex{
 	display: flex !important;
 }
@@ -1018,11 +1055,17 @@ select{
 .h-\[950px\]{
 	height: 950px !important;
 }
+.h-\[220px\]{
+	height: 220px !important;
+}
 .h-\[400px\]{
 	height: 400px !important;
 }
 .h-\[350px\]{
 	height: 350px !important;
+}
+.h-\[500px\]{
+	height: 500px !important;
 }
 .h-\[300px\]{
 	height: 300px !important;
@@ -1033,14 +1076,17 @@ select{
 .h-\[40px\]{
 	height: 40px !important;
 }
-.h-full{
-	height: 100% !important;
+.h-screen{
+	height: 100vh !important;
 }
 .h-\[0px\]{
 	height: 0px !important;
 }
 .h-\[150px\]{
 	height: 150px !important;
+}
+.h-full{
+	height: 100% !important;
 }
 .h-\[420px\]{
 	height: 420px !important;
@@ -1050,9 +1096,6 @@ select{
 }
 .h-20{
 	height: 5rem !important;
-}
-.h-screen{
-	height: 100vh !important;
 }
 .w-full{
 	width: 100% !important;
@@ -1071,9 +1114,6 @@ select{
 }
 .w-\[40px\]{
 	width: 40px !important;
-}
-.w-\[630px\]{
-	width: 630px !important;
 }
 .w-8{
 	width: 2rem !important;
@@ -1126,6 +1166,9 @@ select{
 .list-none{
 	list-style-type: none !important;
 }
+.list-disc{
+	list-style-type: disc !important;
+}
 .grid-cols-12{
 	grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
 }
@@ -1156,9 +1199,6 @@ select{
 .justify-start{
 	justify-content: flex-start !important;
 }
-.gap-16{
-	gap: 4rem !important;
-}
 .gap-0{
 	gap: 0px !important;
 }
@@ -1175,9 +1215,11 @@ select{
 .gap-y-16{
 	row-gap: 4rem !important;
 }
-.gap-x-24{
-	-moz-column-gap: 6rem !important;
-	     column-gap: 6rem !important;
+.gap-y-\[50px\]{
+	row-gap: 50px !important;
+}
+.gap-y-\[150px\]{
+	row-gap: 150px !important;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
 	--tw-space-y-reverse: 0 !important;
@@ -1192,6 +1234,9 @@ select{
 }
 .overflow-y-auto{
 	overflow-y: auto !important;
+}
+.overflow-hidden{
+	overflow: hidden !important;
 }
 .rounded-full{
 	border-radius: 9999px !important;
@@ -1381,6 +1426,9 @@ select{
 .pr-4{
 	padding-right: 1rem !important;
 }
+.pl-\[30px\]{
+	padding-left: 30px !important;
+}
 .text-left{
 	text-align: left !important;
 }
@@ -1429,6 +1477,9 @@ select{
 .text-\[14px\]{
 	font-size: 14px !important;
 }
+.text-\[70px\]{
+	font-size: 70px !important;
+}
 .text-\[60px\]{
 	font-size: 60px !important;
 }
@@ -1460,12 +1511,6 @@ select{
 	font-size: 0.875rem !important;
 	line-height: 1.25rem !important;
 }
-.text-\[75px\]{
-	font-size: 75px !important;
-}
-.text-\[70px\]{
-	font-size: 70px !important;
-}
 .font-black{
 	font-weight: 900 !important;
 }
@@ -1484,14 +1529,17 @@ select{
 .leading-\[60px\]{
 	line-height: 60px !important;
 }
+.leading-\[80px\]{
+	line-height: 80px !important;
+}
 .leading-\[65px\]{
 	line-height: 65px !important;
 }
 .leading-tight{
 	line-height: 1.25 !important;
 }
-.leading-\[80px\]{
-	line-height: 80px !important;
+.leading-\[46px\]{
+	line-height: 46px !important;
 }
 .text-white{
 	--tw-text-opacity: 1 !important;
@@ -1792,10 +1840,6 @@ body::before{
 		margin-top: 6rem !important;
 		margin-bottom: 6rem !important;
 	}
-	.lg\:my-32{
-		margin-top: 8rem !important;
-		margin-bottom: 8rem !important;
-	}
 	.lg\:mb-48{
 		margin-bottom: 12rem !important;
 	}
@@ -1862,8 +1906,20 @@ body::before{
 	.xl\:col-start-7{
 		grid-column-start: 7 !important;
 	}
+	.xl\:col-start-6{
+		grid-column-start: 6 !important;
+	}
+	.xl\:col-start-3{
+		grid-column-start: 3 !important;
+	}
+	.xl\:col-start-9{
+		grid-column-start: 9 !important;
+	}
 	.xl\:mb-0{
 		margin-bottom: 0px !important;
+	}
+	.xl\:mb-36{
+		margin-bottom: 9rem !important;
 	}
 	.xl\:block{
 		display: block !important;
@@ -1896,6 +1952,10 @@ body::before{
 	.xl\:p-8{
 		padding: 2rem !important;
 	}
+	.xl\:px-0{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
 	.xl\:text-\[100px\]{
 		font-size: 100px !important;
 	}
@@ -1907,11 +1967,11 @@ body::before{
 	.\32xl\:-right-8{
 		right: -2rem !important;
 	}
-	.\32xl\:-left-12{
-		left: -3rem !important;
-	}
 	.\32xl\:-right-12{
 		right: -3rem !important;
+	}
+	.\32xl\:-left-12{
+		left: -3rem !important;
 	}
 	.\32xl\:order-1{
 		order: 1 !important;
@@ -1931,26 +1991,23 @@ body::before{
 	.\32xl\:col-span-5{
 		grid-column: span 5 / span 5 !important;
 	}
-	.\32xl\:col-span-7{
-		grid-column: span 7 / span 7 !important;
-	}
-	.\32xl\:col-end-12{
-		grid-column-end: 12 !important;
-	}
 	.\32xl\:col-end-11{
 		grid-column-end: 11 !important;
 	}
 	.\32xl\:col-end-6{
 		grid-column-end: 6 !important;
 	}
-	.\32xl\:col-start-8{
-		grid-column-start: 8 !important;
+	.\32xl\:col-end-12{
+		grid-column-end: 12 !important;
 	}
 	.\32xl\:col-start-7{
 		grid-column-start: 7 !important;
 	}
 	.\32xl\:col-start-2{
 		grid-column-start: 2 !important;
+	}
+	.\32xl\:col-start-8{
+		grid-column-start: 8 !important;
 	}
 	.\32xl\:my-28{
 		margin-top: 7rem !important;
