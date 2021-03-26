@@ -850,12 +850,6 @@ select{
 .left-\[-10px\]{
 	left: -10px !important;
 }
-.-bottom-8{
-	bottom: -2rem !important;
-}
-.right-8{
-	right: 2rem !important;
-}
 .bottom-\[-30px\]{
 	bottom: -30px !important;
 }
@@ -892,6 +886,18 @@ select{
 .col-span-12{
 	grid-column: span 12 / span 12 !important;
 }
+.col-span-1{
+	grid-column: span 1 / span 1 !important;
+}
+.col-span-11{
+	grid-column: span 11 / span 11 !important;
+}
+.col-span-3{
+	grid-column: span 3 / span 3 !important;
+}
+.col-span-9{
+	grid-column: span 9 / span 9 !important;
+}
 .mx-auto{
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -903,10 +909,6 @@ select{
 .my-\[15px\]{
 	margin-top: 15px !important;
 	margin-bottom: 15px !important;
-}
-.my-20{
-	margin-top: 5rem !important;
-	margin-bottom: 5rem !important;
 }
 .mx-4{
 	margin-left: 1rem !important;
@@ -938,8 +940,8 @@ select{
 .mb-4{
 	margin-bottom: 1rem !important;
 }
-.mr-4{
-	margin-right: 1rem !important;
+.mr-\[30px\]{
+	margin-right: 30px !important;
 }
 .mb-\[50px\]{
 	margin-bottom: 50px !important;
@@ -962,23 +964,23 @@ select{
 .mb-12{
 	margin-bottom: 3rem !important;
 }
-.mb-8{
-	margin-bottom: 2rem !important;
-}
-.mb-16{
-	margin-bottom: 4rem !important;
-}
 .mb-20{
 	margin-bottom: 5rem !important;
 }
 .mb-0{
 	margin-bottom: 0px !important;
 }
-.mr-\[30px\]{
-	margin-right: 30px !important;
+.mb-8{
+	margin-bottom: 2rem !important;
 }
 .mb-\[40px\]{
 	margin-bottom: 40px !important;
+}
+.mb-16{
+	margin-bottom: 4rem !important;
+}
+.mr-4{
+	margin-right: 1rem !important;
 }
 .flex{
 	display: flex !important;
@@ -1007,11 +1009,11 @@ select{
 .h-\[100px\]{
 	height: 100px !important;
 }
-.h-4{
-	height: 1rem !important;
+.h-\[15px\]{
+	height: 15px !important;
 }
-.h-\[950px\]{
-	height: 950px !important;
+.h-\[650px\]{
+	height: 650px !important;
 }
 .h-\[220px\]{
 	height: 220px !important;
@@ -1058,23 +1060,14 @@ select{
 .h-\[430px\]{
 	height: 430px !important;
 }
-.h-\[\]{
-	height:  !important;
-}
-.h-\[15px\]{
-	height: 15px !important;
-}
-.h-\[550px\]{
-	height: 550px !important;
-}
-.h-\[650px\]{
-	height: 650px !important;
+.h-4{
+	height: 1rem !important;
 }
 .w-full{
 	width: 100% !important;
 }
-.w-4{
-	width: 1rem !important;
+.w-\[15px\]{
+	width: 15px !important;
 }
 .w-\[350px\]{
 	width: 350px !important;
@@ -1093,9 +1086,6 @@ select{
 }
 .w-4\/5{
 	width: 80% !important;
-}
-.w-\[15px\]{
-	width: 15px !important;
 }
 .flex-1{
 	flex: 1 1 0% !important;
@@ -1201,9 +1191,6 @@ select{
 }
 .self-start{
 	align-self: flex-start !important;
-}
-.self-end{
-	align-self: flex-end !important;
 }
 .overflow-y-auto{
 	overflow-y: auto !important;
@@ -1384,20 +1371,23 @@ select{
 .pr-\[50px\]{
 	padding-right: 50px !important;
 }
+.pl-\[30px\]{
+	padding-left: 30px !important;
+}
 .pb-8{
 	padding-bottom: 2rem !important;
 }
 .pb-32{
 	padding-bottom: 8rem !important;
 }
-.pl-\[30px\]{
-	padding-left: 30px !important;
-}
 .pl-8{
 	padding-left: 2rem !important;
 }
 .pr-4{
 	padding-right: 1rem !important;
+}
+.pb-\[5px\]{
+	padding-bottom: 5px !important;
 }
 .text-left{
 	text-align: left !important;
@@ -1444,23 +1434,16 @@ select{
 .text-\[36px\]{
 	font-size: 36px !important;
 }
-.text-\[14px\]{
-	font-size: 14px !important;
-}
 .text-\[60px\]{
 	font-size: 60px !important;
-}
-.text-4xl{
-	font-size: 2.25rem !important;
-	line-height: 2.5rem !important;
-}
-.text-5xl{
-	font-size: 3rem !important;
-	line-height: 1 !important;
 }
 .text-2xl{
 	font-size: 1.5rem !important;
 	line-height: 2rem !important;
+}
+.text-5xl{
+	font-size: 3rem !important;
+	line-height: 1 !important;
 }
 .text-3xl{
 	font-size: 1.875rem !important;
@@ -1469,6 +1452,10 @@ select{
 .text-xl{
 	font-size: 1.25rem !important;
 	line-height: 1.75rem !important;
+}
+.text-4xl{
+	font-size: 2.25rem !important;
+	line-height: 2.5rem !important;
 }
 .text-\[100px\]{
 	font-size: 100px !important;
@@ -1481,14 +1468,14 @@ select{
 	font-size: 1.125rem !important;
 	line-height: 1.75rem !important;
 }
-.font-black{
-	font-weight: 900 !important;
+.font-bold{
+	font-weight: 700 !important;
 }
 .font-light{
 	font-weight: 300 !important;
 }
-.font-bold{
-	font-weight: 700 !important;
+.font-black{
+	font-weight: 900 !important;
 }
 .uppercase{
 	text-transform: uppercase !important;
@@ -1832,12 +1819,6 @@ body::before{
 	.lg\:mb-48{
 		margin-bottom: 12rem !important;
 	}
-	.lg\:mb-36{
-		margin-bottom: 9rem !important;
-	}
-	.lg\:mb-28{
-		margin-bottom: 7rem !important;
-	}
 	.lg\:mb-0{
 		margin-bottom: 0px !important;
 	}
@@ -1860,10 +1841,6 @@ body::before{
 	.lg\:px-0{
 		padding-left: 0px !important;
 		padding-right: 0px !important;
-	}
-	.lg\:px-8{
-		padding-left: 2rem !important;
-		padding-right: 2rem !important;
 	}
 	.lg\:text-8xl{
 		font-size: 6rem !important;
@@ -1895,6 +1872,12 @@ body::before{
 	.xl\:col-span-7{
 		grid-column: span 7 / span 7 !important;
 	}
+	.xl\:col-span-1{
+		grid-column: span 1 / span 1 !important;
+	}
+	.xl\:col-span-11{
+		grid-column: span 11 / span 11 !important;
+	}
 	.xl\:col-start-7{
 		grid-column-start: 7 !important;
 	}
@@ -1909,6 +1892,12 @@ body::before{
 	}
 	.xl\:mb-0{
 		margin-bottom: 0px !important;
+	}
+	.xl\:mb-36{
+		margin-bottom: 9rem !important;
+	}
+	.xl\:mb-28{
+		margin-bottom: 7rem !important;
 	}
 	.xl\:block{
 		display: block !important;
@@ -1944,6 +1933,14 @@ body::before{
 	.xl\:p-8{
 		padding: 2rem !important;
 	}
+	.xl\:px-0{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.xl\:px-8{
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
 	.xl\:text-\[100px\]{
 		font-size: 100px !important;
 	}
@@ -1952,24 +1949,11 @@ body::before{
 	}
 }
 @media (min-width: 1350px){
-	.\32xl\:-right-8{
-		right: -2rem !important;
-	}
-	.\32xl\:col-span-6{
-		grid-column: span 6 / span 6 !important;
-	}
 	.\32xl\:col-span-3{
 		grid-column: span 3 / span 3 !important;
 	}
 	.\32xl\:col-span-4{
 		grid-column: span 4 / span 4 !important;
-	}
-	.\32xl\:my-28{
-		margin-top: 7rem !important;
-		margin-bottom: 7rem !important;
-	}
-	.\32xl\:mb-0{
-		margin-bottom: 0px !important;
 	}
 	.\32xl\:gap-x-20{
 		-moz-column-gap: 5rem !important;

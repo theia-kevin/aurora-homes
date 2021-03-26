@@ -221,7 +221,7 @@ get_header();
                                 <div class="absolute inset-0 flex flex-col justify-center items-end p-16 xl:p-16 xl:p-8 z-40" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                                     <p class="font-foco-bold text-[18px] text-white uppercase text-right">Our Work</p>
                                     <p class="font-foco-black text-[36px] text-white uppercase text-right"><?php the_title(); ?></p>
-                                    <p class="font-foco-regular text-[14px] text-white text-right w-1/2"><?php the_field( 'short_description' ); ?></p>
+                                    <p class="font-foco-regular text-[16px] text-white text-right w-1/2"><?php the_field( 'short_description' ); ?></p>
                                 </div>
                                 <img class="object-cover object-center h-[400px] w-full" src="<?php the_field( 'feature' ); ?>" alt="">
                             </a>
@@ -256,7 +256,7 @@ get_header();
                                 <div class="absolute inset-0 flex flex-col justify-center items-end p-[60px] z-40" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                                     <p class="font-foco-bold text-[18px] text-white uppercase text-right">Our Work</p>
                                     <p class="font-foco-black text-[36px] text-white uppercase text-right"><?php the_title(); ?></p>
-                                    <p class="font-foco-regular text-[14px] text-white text-right w-1/2"><?php the_field( 'short_description' ); ?></p>
+                                    <p class="font-foco-regular text-[16px] text-white text-right w-1/2"><?php the_field( 'short_description' ); ?></p>
                                 </div>
                                 <img class="object-cover object-center h-[400px] w-full" src="<?php the_field( 'feature' ); ?>" alt="">
                             </a>

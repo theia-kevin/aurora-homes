@@ -68,7 +68,7 @@ get_header();
                         </div>
                         <p class="font-foco-black text-[24px] text-aurora-grey-02 uppercase py-[15px]">Professional
                             Project Manager</p>
-                        <p class="font-foco-light text-[14px] text-aurora-grey-02 text-justify">Schedule the
+                        <p class="font-foco-light text-[16px] text-aurora-grey-02 text-justify">Schedule the
                             construction time frame accordingly, manage the construction progress and material cost,
                             arrange various inspections being performed, and ensure that all constructions meet the
                             requirements and standards. And will report and update the progress of the project to the
@@ -82,7 +82,7 @@ get_header();
                         </div>
                         <p class="font-foco-black text-[24px] text-aurora-grey-02 uppercase py-[15px]">Quality Work</p>
                         <ul class="list-none list-inside">
-                            <li class="font-foco-light text-[14px] text-aurora-grey-02 text-justify">We can guarantee
+                            <li class="font-foco-light text-[16px] text-aurora-grey-02 text-justify">We can guarantee
                                 that the construction personnel are trusted, qualified or certified and skilled workers,
                                 and the work is also quality guaranteed. At the same time, we cooperate with a number of
                                 high reputed local building material suppliers to provide quality-guaranteed products
@@ -99,7 +99,7 @@ get_header();
                         <p class="font-foco-black text-[24px] text-aurora-grey-02 uppercase py-[15px]">Effective
                             Communication</p>
                         <ul class="list-none list-inside">
-                            <li class="font-foco-light text-[14px] text-aurora-grey-02 text-justify">Good communication
+                            <li class="font-foco-light text-[16px] text-aurora-grey-02 text-justify">Good communication
                                 with customers is the pathway to successful projects. Our team will learn the customer’s
                                 needs from the beginning of the contract. The overall-scale planning of the project, the
                                 estimated completion time, the project budget and the style of the future house will be
@@ -116,7 +116,7 @@ get_header();
                         </div>
                         <p class="font-foco-black text-[24px] text-aurora-grey-02 uppercase py-[15px]">Comprehensive
                             Service</p>
-                        <p class="font-foco-light text-[14px] text-aurora-grey-02 text-justify">From answering customer
+                        <p class="font-foco-light text-[16px] text-aurora-grey-02 text-justify">From answering customer
                             questions in the field of housing construction and projects, reporting on progress during
                             construction, to preparing various compliance documents for customers and the aftermath of
                             problems after customers move in, we will provide the most professional advice and
