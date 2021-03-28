@@ -908,10 +908,6 @@ select{
 	margin-top: 50px !important;
 	margin-bottom: 50px !important;
 }
-.my-12{
-	margin-top: 3rem !important;
-	margin-bottom: 3rem !important;
-}
 .my-\[150px\]{
 	margin-top: 150px !important;
 	margin-bottom: 150px !important;
@@ -957,17 +953,17 @@ select{
 .mt-auto{
 	margin-top: auto !important;
 }
-.mb-8{
-	margin-bottom: 2rem !important;
-}
-.mb-12{
-	margin-bottom: 3rem !important;
-}
 .mb-\[40px\]{
 	margin-bottom: 40px !important;
 }
+.mb-8{
+	margin-bottom: 2rem !important;
+}
 .mb-16{
 	margin-bottom: 4rem !important;
+}
+.mb-12{
+	margin-bottom: 3rem !important;
 }
 .mb-20{
 	margin-bottom: 5rem !important;
@@ -1061,6 +1057,9 @@ select{
 }
 .h-\[430px\]{
 	height: 430px !important;
+}
+.h-\[450px\]{
+	height: 450px !important;
 }
 .h-\[350px\]{
 	height: 350px !important;
@@ -1179,9 +1178,6 @@ select{
 .justify-start{
 	justify-content: flex-start !important;
 }
-.gap-0{
-	gap: 0px !important;
-}
 .gap-4{
 	gap: 1rem !important;
 }
@@ -1232,13 +1228,13 @@ select{
 	--tw-border-opacity: 1 !important;
 	border-color: rgba(104, 152, 176, var(--tw-border-opacity)) !important;
 }
-.border-aurora-grey-01{
-	--tw-border-opacity: 1 !important;
-	border-color: rgba(77, 77, 77, var(--tw-border-opacity)) !important;
-}
 .border-aurora-blue-02{
 	--tw-border-opacity: 1 !important;
 	border-color: rgba(16, 14, 71, var(--tw-border-opacity)) !important;
+}
+.border-aurora-grey-01{
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(77, 77, 77, var(--tw-border-opacity)) !important;
 }
 .border-aurora-yellow-01{
 	--tw-border-opacity: 1 !important;
@@ -1381,17 +1377,14 @@ select{
 .pl-\[30px\]{
 	padding-left: 30px !important;
 }
-.pb-32{
-	padding-bottom: 8rem !important;
+.pb-\[40px\]{
+	padding-bottom: 40px !important;
 }
 .pl-8{
 	padding-left: 2rem !important;
 }
 .pr-4{
 	padding-right: 1rem !important;
-}
-.pb-\[40px\]{
-	padding-bottom: 40px !important;
 }
 .text-left{
 	text-align: left !important;
@@ -1441,17 +1434,12 @@ select{
 .text-\[100px\]{
 	font-size: 100px !important;
 }
-.text-4xl{
-	font-size: 2.25rem !important;
-	line-height: 2.5rem !important;
+.text-\[14px\]{
+	font-size: 14px !important;
 }
 .text-5xl{
 	font-size: 3rem !important;
 	line-height: 1 !important;
-}
-.text-sm{
-	font-size: 0.875rem !important;
-	line-height: 1.25rem !important;
 }
 .text-2xl{
 	font-size: 1.5rem !important;
@@ -1465,14 +1453,11 @@ select{
 	font-size: 1.125rem !important;
 	line-height: 1.75rem !important;
 }
-.text-\[14px\]{
-	font-size: 14px !important;
+.font-light{
+	font-weight: 300 !important;
 }
 .font-black{
 	font-weight: 900 !important;
-}
-.font-light{
-	font-weight: 300 !important;
 }
 .font-bold{
 	font-weight: 700 !important;
@@ -1837,33 +1822,17 @@ body::before{
 }
 
 @media (min-width: 1024px){
-	.lg\:col-span-6{
-		grid-column: span 6 / span 6 !important;
+	.lg\:col-span-7{
+		grid-column: span 7 / span 7 !important;
 	}
 	.lg\:col-span-5{
 		grid-column: span 5 / span 5 !important;
 	}
-	.lg\:col-span-7{
-		grid-column: span 7 / span 7 !important;
-	}
 	.lg\:col-span-4{
 		grid-column: span 4 / span 4 !important;
 	}
-	.lg\:col-start-7{
-		grid-column-start: 7 !important;
-	}
-	.lg\:my-24{
-		margin-top: 6rem !important;
-		margin-bottom: 6rem !important;
-	}
 	.lg\:mb-48{
 		margin-bottom: 12rem !important;
-	}
-	.lg\:mb-0{
-		margin-bottom: 0px !important;
-	}
-	.lg\:mb-16{
-		margin-bottom: 4rem !important;
 	}
 	.lg\:mb-24{
 		margin-bottom: 6rem !important;
@@ -1871,20 +1840,9 @@ body::before{
 	.lg\:h-96{
 		height: 24rem !important;
 	}
-	.lg\:gap-x-16{
-		-moz-column-gap: 4rem !important;
-		     column-gap: 4rem !important;
-	}
-	.lg\:gap-y-32{
-		row-gap: 8rem !important;
-	}
 	.lg\:px-0{
 		padding-left: 0px !important;
 		padding-right: 0px !important;
-	}
-	.lg\:text-8xl{
-		font-size: 6rem !important;
-		line-height: 1 !important;
 	}
 }
 
@@ -1973,6 +1931,13 @@ body::before{
 	.xl\:gap-x-12{
 		-moz-column-gap: 3rem !important;
 		     column-gap: 3rem !important;
+	}
+	.xl\:gap-y-\[120px\]{
+		row-gap: 120px !important;
+	}
+	.xl\:gap-x-\[60px\]{
+		-moz-column-gap: 60px !important;
+		     column-gap: 60px !important;
 	}
 	.xl\:p-16{
 		padding: 4rem !important;

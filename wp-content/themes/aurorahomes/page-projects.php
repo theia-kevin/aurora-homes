@@ -15,16 +15,15 @@ get_header();
             </a>
         </div>
     </div>
-
-    <div id="completed" class="relative" data-aos="fade-up" data-aos-once="true" >
+    <div id="completed" class="relative mb-[100px] pb-[100px]" data-aos="fade-up" data-aos-once="true">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-12">
-                <div class="col-span-12 lg:col-span-6">
+                <div class="col-span-12 xl:col-span-6">
                     <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[40px]">Completed Projects</p>
                     <div class="font-foco-light text-[14px] text-aurora-grey-02 pb-[100px]"><?php echo term_description(5); ?></div>
                 </div>
             </div>
-            <div class="grid grid-cols-12 gap-0 gap-y-16 lg:gap-y-32 lg:gap-x-16">
+            <div class="grid grid-cols-12 gap-y-[60px] xl:gap-y-[120px] xl:gap-x-[60px]">
 				<?php
 				$completed_projects = new WP_Query( [
 					'post_type' => 'project',
@@ -39,35 +38,34 @@ get_header();
 				while ( $completed_projects->have_posts() ) {
 					$completed_projects->the_post();
 					?>
-                    <div class="col-span-12 lg:col-span-5">
-                        <a href="<?php the_permalink(); ?>" class="block relative" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
+                    <div class="col-span-12 xl:col-span-6 flex flex-col">
+                        <a href="<?php the_permalink(); ?>" class="block relative mb-[30px]" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
                             <div class="bg-aurora-blue-02 bg-opacity-50 absolute inset-0 z-30" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                             </div>
-                            <img class="mb-8 w-full" src="<?php the_field('feature'); ?>" alt="">
+                            <img class="object-cover object-center h-[450px] w-full" src="<?php the_field('feature'); ?>" alt="">
                         </a>
-                        <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase mb-4"><?php the_title(); ?></p>
-                        <p class="font-light text-aurora-grey-02 mb-12"><?php the_field('short_description'); ?></p>
-                        <a class="self-start bg-aurora-blue-03 px-4 py-2 rounded-full font-light text-sm text-white" href="<?php the_permalink(); ?>">Learn
-                            more</a>
+                        <p class="font-foco-black text-[36px] leading-[46px] text-aurora-blue-04 uppercase pb-[30px]"><?php the_title(); ?></p>
+                        <div class="font-foco-light text-[16px] text-aurora-grey-02 pb-[50px]"><?php the_field('short_description'); ?></div>
+                        <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start mt-auto transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php the_permalink(); ?>">Learn
+                            More</a>
                     </div>
-
 					<?php
 				}
 				?>
             </div>
         </div>
-        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height: 500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
+        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30 h-[500px]" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
         </div>
     </div>
-    <div id="wip" data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">
-        <div class="grid grid-cols-12 mb-8 lg:mb-16 gap-0 lg:gap-x-16">
-            <div class="col-span-12 lg:col-start-7 lg:col-span-6">
-                <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase mb-8">Projects Work In
+    <div id="wip" data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4 relative z-40">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 xl:col-start-7 xl:col-span-6">
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[40px]">Projects Work In
                     Progress</p>
-                <div class="font-light text-aurora-grey-02 mb-4"><?php echo term_description(6); ?></div>
+                <div class="font-foco-light text-[14px] text-aurora-grey-02 pb-[100px]"><?php echo term_description(6); ?></div>
             </div>
         </div>
-        <div class="grid grid-cols-12 gap-0 gap-y-16 lg:gap-y-32 lg:gap-x-16">
+        <div class="grid grid-cols-12 gap-y-[60px] xl:gap-y-[120px] xl:gap-x-[60px]">
 	        <?php
 	        $wip_projects = new WP_Query( [
 		        'post_type' => 'project',
@@ -82,18 +80,17 @@ get_header();
 	        while ( $wip_projects->have_posts() ) {
 		        $wip_projects->the_post();
 		        ?>
-                <div class="col-span-12 lg:col-span-5">
-                    <a href="<?php the_permalink(); ?>" class="block relative" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
+                <div class="col-span-12 xl:col-span-6 flex flex-col">
+                    <a href="<?php the_permalink(); ?>" class="block relative mb-[30px]" x-data="{ showOverlay: false }" x-on:mouseover="showOverlay = true" x-on:mouseover.away="showOverlay = false">
                         <div class="bg-aurora-blue-02 bg-opacity-50 absolute inset-0 z-30" x-show="showOverlay" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
                         </div>
-                        <img class="mb-8 w-full" src="<?php the_field('feature'); ?>" alt="">
+                        <img class="object-cover object-center h-[450px] w-full" src="<?php the_field('feature'); ?>" alt="">
                     </a>
-                    <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase mb-4"><?php the_title(); ?></p>
-                    <p class="font-light text-aurora-grey-02 mb-12"><?php the_field('short_description'); ?></p>
-                    <a class="self-start bg-aurora-blue-03 px-4 py-2 rounded-full font-light text-sm text-white" href="<?php the_permalink(); ?>">Learn
-                        more</a>
+                    <p class="font-foco-black text-[36px] leading-[46px] text-aurora-blue-04 uppercase pb-[30px]"><?php the_title(); ?></p>
+                    <div class="font-foco-light text-[16px] text-aurora-grey-02 pb-[50px]"><?php the_field('short_description'); ?></div>
+                    <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start mt-auto transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php the_permalink(); ?>">Learn
+                        More</a>
                 </div>
-
 		        <?php
 	        }
 	        ?>

@@ -42,7 +42,7 @@ get_header();
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">The Highest
                     Quality Work, The Most Intimate Service.</p>
             </div>
-            <div class="col-span-12 xl:col-start-7 flex items-end justify-end">
+            <div class="col-span-12 xl:col-start-7 flex items-end">
                 <div class="flex flex-col justify-end h-[250px] xl:h-[350px] w-full xl:w-[350px]">
                     <p class="font-foco-light text-[16px] text-aurora-grey-02 pb-[15px]">Aurora provides variety of
                         services
