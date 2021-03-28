@@ -1390,6 +1390,9 @@ select{
 .pr-4{
 	padding-right: 1rem !important;
 }
+.pb-\[40px\]{
+	padding-bottom: 40px !important;
+}
 .text-left{
 	text-align: left !important;
 }
@@ -1461,6 +1464,9 @@ select{
 .text-lg{
 	font-size: 1.125rem !important;
 	line-height: 1.75rem !important;
+}
+.text-\[14px\]{
+	font-size: 14px !important;
 }
 .font-black{
 	font-weight: 900 !important;

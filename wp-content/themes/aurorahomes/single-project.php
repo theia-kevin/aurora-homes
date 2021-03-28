@@ -30,8 +30,8 @@ if (get_the_terms( get_the_ID(), 'project_status' )) {
                     <span class="font-light text-aurora-grey-02"><?php the_field( 'year' ); ?></span></p>
                 <p class="mb-4"><span class="font-bold leading-tight text-lg text-black">Status:</span>
                     <span class="font-light text-aurora-grey-02"><?php echo $status; ?></span></p>
-                <p class="mb-12"><span class="font-bold leading-tight text-lg text-black">Client:</span>
-                    <span class="font-light text-aurora-grey-02"><?php the_field( 'client' ); ?></span></p>
+                <p class="mb-12"><span class="font-bold leading-tight text-lg text-black">Package:</span>
+                    <span class="font-light text-aurora-grey-02"><?php the_field( 'package' ); ?></span></p>
                 <p class="w-4/5 mb-20 font-light text-aurora-grey-02"><?php the_field( 'description' ); ?></p>
                 <div class="flex mb-20">
                     <a class="bg-aurora-blue-03 px-8 py-2 rounded-full font-light text-white mr-4" href="<?php echo get_permalink( get_page_by_title( 'Projects' ) ); ?>">Back
