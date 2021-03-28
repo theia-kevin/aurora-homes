@@ -12,17 +12,17 @@ mix.webpackConfig({
   devtool: 'source-map'
 });
 
-// mix.browserSync({
-//   proxy: 'aurora-homes.test',
-//   files: [
-//     'resources/js/*.{js,vue}',
-//     'resources/js/**/*.{js,vue}',
-//     'resources/sass/*.scss',
-//     'resources/sass/**/*.scss',
-//     '*.php',
-//     '**/*.php',
-//   ]
-// });
+mix.browserSync({
+  proxy: 'aurora-homes.test',
+  files: [
+    'resources/js/*.{js,vue}',
+    'resources/js/**/*.{js,vue}',
+    'resources/sass/*.scss',
+    'resources/sass/**/*.scss',
+    '*.php',
+    '**/*.php',
+  ]
+});
 
 mix.setPublicPath('/');
 

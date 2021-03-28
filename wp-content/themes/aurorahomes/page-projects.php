@@ -12,7 +12,7 @@ get_header();
                 Us</a>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="relative">
+    <div id="completed" data-aos="fade-up" data-aos-duration="2000" class="relative">
         <div class="container mx-auto px-4 lg:px-0 pb-32 mb-24 lg:mb-0 relative z-40">
             <div class="grid grid-cols-12 mb-8 lg:mb-16 gap-0 lg:gap-x-16">
                 <div class="col-span-12 lg:col-span-6">
@@ -56,7 +56,7 @@ get_header();
         <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30" style="height: 500px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">
+    <div id="wip" data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 lg:px-0 pb-32 my-12 lg:my-24 mb-24 lg:mb-0 relative z-40">
         <div class="grid grid-cols-12 mb-8 lg:mb-16 gap-0 lg:gap-x-16">
             <div class="col-span-12 lg:col-start-7 lg:col-span-6">
                 <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase mb-8">Projects Work In

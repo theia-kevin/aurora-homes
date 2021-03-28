@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html, body {
   @apply relative h-full;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,7 +76,7 @@ body {
         @apply py-4;
 
         a {
-          @apply font-foco-light text-[21px] text-white transition-all duration-300 hover:text-aurora-blue-02;
+          @apply font-foco-light text-[21px] text-white transition-all duration-300 hover:text-aurora-blue-03;
         }
 
         &.active {
@@ -121,5 +122,32 @@ body {
 
   input[type="submit"] {
     @apply inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] self-start cursor-pointer transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01;
+  }
+}
+
+#completed {
+ &:target:before {
+   content: "";
+   display: block;
+   height: 200px;
+   margin: -200px 0 0;
+ }
+}
+
+#wip {
+  &:target:before {
+    content: "";
+    display: block;
+    height: 200px;
+    margin: -200px 0 0;
+  }
+}
+
+#contact {
+  &:target:before {
+    content: "";
+    display: block;
+    height: 200px;
+    margin: -200px 0 0;
   }
 }

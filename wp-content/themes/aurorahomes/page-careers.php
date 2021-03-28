@@ -1,11 +1,11 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-[650px] xl:h-[950px] mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
+    <div class="relative h-[650px] xl:h-[950px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
-        <div data-aos="fade-right" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
+        <div data-aos="fade-right" data-aos-once="true" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
             <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase">
                 Looking To</p>
             <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase pb-[30px]">
@@ -15,12 +15,12 @@ get_header();
             </a>
         </div>
     </div>
-    <div data-aos="fade-up" class="container mx-auto mb-[100px] px-4">
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-6">
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Interested in Construction & Development</p>
-                <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase pb-[50px]">Join Our Aurora Family Today</p>
-                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Openings' ) ); ?>">View
+                <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">Join Our Aurora Family Today</p>
+                <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start  my-[50px] transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Openings' ) ); ?>">View
                     Current Openings</a>
             </div>
             <div class="col-span-12 xl:col-span-6 relative">
@@ -29,7 +29,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="container mx-auto px-4">
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto px-4">
         <div class="grid grid-cols-12 mb-[50px]">
             <div class="col-span-3 xl:col-span-1 flex justify-end">
                 <div class="relative inline-block self-start">
@@ -96,18 +96,15 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" class="mb-[100px]">
-        <div class="w-full bg-cover bg-no-repeat z-30 h-[500px]" style="background-image: url('<?php echo get_theme_file_uri( '/images/asset 2-2.png' ); ?>');">
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 xl:px-0 mb-12 xl:mb-28">
+    <img data-aos="fade-up" data-aos-once="true" class="object-contain mb-[100px]" src="<?php echo get_theme_file_uri( '/images/asset 2-2.png' ); ?>" alt="">
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12">
-                <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">Our Current Listings</p>
-				<p class="font-light text-aurora-grey-02 mb-12">In order to cope with aurora's expanding company scale and projects, to solve the various needs of customers and potential future challenges, aurora needs more talents to join us. If you are interested in us and need a place to show and enhance your value, you are welcome to submit your resume to us.</p>
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Our Current Listings</p>
+				<p class="font-foco-light text-[16px] text-aurora-grey-02 pb-[50px]">In order to cope with aurora's expanding company scale and projects, to solve the various needs of customers and potential future challenges, aurora needs more talents to join us. If you are interested in us and need a place to show and enhance your value, you are welcome to submit your resume to us.</p>
             </div>
         </div>
-        <div class="grid grid-cols-12 gap-y-16 2xl:gap-x-20">
+        <div class="grid grid-cols-12 gap-y-[60px] xl:gap-[60px] mb-[60px]">
 			<?php
 			$office_listings = new WP_Query( [
 				'post_type' => 'listing',
@@ -131,81 +128,73 @@ get_header();
 			while ( $office_listings->have_posts() ) {
 				$office_listings->the_post();
 				?>
-                <div class="col-span-12 2xl:col-span-4">
-                    <div class="h-full flex flex-col justify-start items-end">
-                        <div class="border border-aurora-blue-03 h-full w-full">
-                            <div class="bg-aurora-blue-03 p-8">
-                                <div class="font-black leading-tight text-3xl text-white uppercase"><?php the_title(); ?>:</div>
-                                <div class="font-bold text-xl text-white uppercase"><?php the_field( 'location' ); ?></div>
-                            </div>
-                            <div class="p-8">
-                                <p class="font-light text-aurora-grey-02"><?php the_field( 'description' ); ?></p>
-                            </div>
+                <div class="col-span-12 xl:col-span-4">
+                    <div class="h-full flex flex-col border border-aurora-blue-03">
+                        <div class="bg-aurora-blue-03 p-[30px] h-[180px]">
+                            <div class="font-foco-black text-[36px] leading-[46px] text-white uppercase"><?php the_title(); ?>:</div>
+                            <div class="font-foco-bold text-[24px] text-white uppercase"><?php the_field( 'location' ); ?></div>
                         </div>
-                        <a class="bg-aurora-blue-03 px-8 py-2 rounded-full font-light text-white my-4" href="<?php echo add_query_arg( 'listing_id',
-							get_the_ID(), rtrim( get_permalink( get_page_by_title( 'Apply' ) ), '/' ) ); ?>">Apply
-                            Now</a>
+                        <div class="flex-grow flex flex-col justify-between p-[30px]">
+                            <div class="font-foco-light text-[16px] text-aurora-grey-02 pb-[30px]"><?php the_field( 'description' ); ?></div>
+                            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-end mt-auto transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo add_query_arg( 'listing_id',
+                                get_the_ID(), rtrim( get_permalink( get_page_by_title( 'Apply' ) ), '/' ) ); ?>">Apply Now</a>
+                        </div>
                     </div>
                 </div>
 				<?php
 			}
 			?>
         </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto px-4 xl:px-0 mb-12 xl:mb-36">
-        <div class="grid grid-cols-12 gap-y-16 2xl:gap-x-20">
-			<?php
-			$office_listings = new WP_Query( [
-				'post_type' => 'listing',
-				'tax_query' => [
-					[
-						[
-							'taxonomy' => 'listing_status',
-							'field'    => 'name',
-							'terms'    => 'Active'
-						],
+        <div class="grid grid-cols-12 gap-y-[60px] xl:gap-[60px] ">
+		    <?php
+		    $office_listings = new WP_Query( [
+			    'post_type' => 'listing',
+			    'tax_query' => [
+				    [
+					    [
+						    'taxonomy' => 'listing_status',
+						    'field'    => 'name',
+						    'terms'    => 'Active'
+					    ],
 
-						[
-							'taxonomy' => 'listing_type',
-							'field'    => 'name',
-							'terms'    => 'Contractor'
-						]
+					    [
+						    'taxonomy' => 'listing_type',
+						    'field'    => 'name',
+						    'terms'    => 'Contractor'
+					    ]
 
-					]
-				]
-			] );
-			while ( $office_listings->have_posts() ) {
-				$office_listings->the_post();
-				?>
-                <div class="col-span-12 2xl:col-span-4">
-                    <div class="h-full flex flex-col justify-start items-end">
-                        <div class="border border-aurora-blue-02 h-full w-full">
-                            <div class="bg-aurora-blue-02 p-8">
-                                <div class="font-black leading-tight text-3xl text-white uppercase"><?php the_title(); ?>:</div>
-                                <div class="font-bold text-xl text-white uppercase"><?php the_field( 'location' ); ?></div>
-                            </div>
-                            <div class="p-8">
-                                <p class="font-light text-aurora-grey-02"><?php the_field( 'description' ); ?></p>
-                            </div>
+				    ]
+			    ]
+		    ] );
+		    while ( $office_listings->have_posts() ) {
+			    $office_listings->the_post();
+			    ?>
+                <div class="col-span-12 xl:col-span-4">
+                    <div class="h-full flex flex-col border border-aurora-blue-02">
+                        <div class="bg-aurora-blue-02 p-[30px] h-[180px]">
+                            <div class="font-foco-black text-[36px] leading-[46px] text-white uppercase"><?php the_title(); ?>:</div>
+                            <div class="font-foco-bold text-[24px] text-white uppercase"><?php the_field( 'location' ); ?></div>
                         </div>
-                        <a class="bg-aurora-blue-02 px-8 py-2 rounded-full font-light text-white my-4" href="<?php echo add_query_arg( 'listing_id',
-							get_the_ID(), rtrim( get_permalink( get_page_by_title( 'Apply' ) ), '/' ) ); ?>">Apply
-                            Now</a>
+                        <div class="flex-grow flex flex-col justify-between p-[30px]">
+                            <div class="font-foco-light text-[16px] text-aurora-grey-02 pb-[30px]"><?php the_field( 'description' ); ?></div>
+                            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] self-end mt-auto transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01" href="<?php echo add_query_arg( 'listing_id',
+							    get_the_ID(), rtrim( get_permalink( get_page_by_title( 'Apply' ) ), '/' ) ); ?>">Apply Now</a>
+                        </div>
                     </div>
                 </div>
-				<?php
-			}
-			?>
+			    <?php
+		    }
+		    ?>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="container mx-auto mb-0 xl:mb-36 px-4 xl:px-0">
-        <div class="grid grid-cols-12 my-12">
-            <div class="col-span-12 text-left 2xl:text-right">
-                <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">Have Questions?</p>
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto px-4">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 text-right">
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Have Questions?</p>
             </div>
         </div>
-        <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase">Interested in working with us?</p>
-        <p class="border-b border-aurora-grey-01 font-light leading-tight pb-8 w-1/2 mb-8">We have more opportunities for both individuals and organisations, leave your message of the interests.</p>
+        <p class="font-foco-black text-[36px] text-aurora-blue-04 uppercase">Interested in working with us?</p>
+        <p class="font-foco-light text-[16px] text-aurora-grey-02 border-b border-aurora-grey-01 pb-[30px] mb-[30px]">We have more opportunities for both individuals and organisations, leave your message of the interests.</p>
         <div><?php echo do_shortcode( '[contact-form-7 id="181" title="Contact form 2"]' ); ?></div>
     </div>
 <?php

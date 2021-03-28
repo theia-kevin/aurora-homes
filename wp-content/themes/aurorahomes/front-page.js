@@ -11925,29 +11925,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 
 var ourWorkSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.our-work-swiper-container', {
+  init: false,
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev'
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
       spaceBetween: 0
     },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
     768: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    1024: {
+    1280: {
       slidesPerView: 3,
       spaceBetween: 30
     }
   },
-  loop: true // autoplay: {
-  //   delay: 3000,
-  // },
-
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+  speed: 900
 });
+ourWorkSwiper.init();
 })();
 
 /******/ })()

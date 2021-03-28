@@ -21,7 +21,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
 	$background_position = 'bg-left-bottom';
 }
 ?>
-<div data-aos="fade-up" class="relative h-[800px] xl:h-[500px] bg-cover bg-no-repeat <?php echo $background_position; ?>" style="background-image: url('<?php echo $background; ?>');">
+<div data-aos="fade-up" data-aos-once="true" class="relative h-[800px] xl:h-[500px] bg-cover bg-no-repeat <?php echo $background_position; ?>" style="background-image: url('<?php echo $background; ?>');">
     <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
     <div class="absolute h-2/6 xl:h-3/6 w-full -top-4 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Path 1985.png' ); ?>');">
     </div>
