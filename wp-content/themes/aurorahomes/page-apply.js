@@ -27647,7 +27647,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticClass: "col-span-12" },
+                  { staticClass: "col-span-12 xl:col-span-6" },
                   [
                     _c("ValidationProvider", {
                       scopedSlots: _vm._u([
@@ -27694,7 +27694,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "col-span-12 flex item-center justify-end py-[30px]"
+                      "col-span-12  xl:col-span-6 flex item-center justify-end py-[30px]"
                   },
                   [
                     _c("input", {

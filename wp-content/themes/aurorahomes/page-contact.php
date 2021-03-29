@@ -1,15 +1,15 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-[650px] xl:h-[950px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
+    <div class="relative h-[650px] xl:h-[750px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/header_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-right" data-aos-once="true" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
-            <p class="font-foco-black text-[100px] leading-[110px] text-white uppercase pb-[30px]">Get In Touch</p>
+            <p class="font-foco-black text-[70px] xl:text-[90px] leading-[80px] xl:leading-[100px] text-white uppercase pb-[30px]">Get In Touch</p>
         </div>
     </div>
-    <div id="contact" data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4">
+    <div id="contact" data-aos="fade-up" data-aos-once="true" data-aos-offset="-100" class="container mx-auto mb-[100px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-4 flex flex-col items-start justify-start">
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase pb-[30px]">

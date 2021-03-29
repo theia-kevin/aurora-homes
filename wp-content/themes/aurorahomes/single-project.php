@@ -74,6 +74,17 @@ if ($next_post_link == get_permalink()) {
 		                            }
 	                            }
 	                            ?>
+	                            <?php
+	                            if ( get_field( 'interior' ) ) {
+		                            foreach ( get_field( 'interior' ) as $interior_image ) {
+			                            ?>
+                                        <div class="swiper-slide">
+                                            <img class="object-cover object-center h-[500px] w-full" src="<?php echo $interior_image; ?>" alt="">
+                                        </div>
+			                            <?php
+		                            }
+	                            }
+	                            ?>
                             </div>
                         </div>
                     </div>
@@ -86,6 +97,17 @@ if ($next_post_link == get_permalink()) {
 			                            ?>
                                         <div class="swiper-slide">
                                             <img class="object-cover object-center h-[250px] w-full" src="<?php echo $exterior_image; ?>" alt="">
+                                        </div>
+			                            <?php
+		                            }
+	                            }
+	                            ?>
+	                            <?php
+	                            if ( get_field( 'interior' ) ) {
+		                            foreach ( get_field( 'interior' ) as $interior_image ) {
+			                            ?>
+                                        <div class="swiper-slide">
+                                            <img class="object-cover object-center h-[250px] w-full" src="<?php echo $interior_image; ?>" alt="">
                                         </div>
 			                            <?php
 		                            }

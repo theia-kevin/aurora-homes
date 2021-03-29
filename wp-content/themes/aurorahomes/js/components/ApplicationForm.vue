@@ -85,7 +85,7 @@
               <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider v-slot="{ errors, validate }">
               <label class="block font-foco-light text-[18px] pb-[15px]">Resume (optional):</label>
               <input type="file" v-if="resumeFieldEnabled" v-on:change="handleResume($event) || validate($event)">
@@ -94,7 +94,7 @@
               </div>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 flex item-center justify-end py-[30px]">
+          <div class="col-span-12  xl:col-span-6 flex item-center justify-end py-[30px]">
             <input class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01" type="submit" value="Submit Application">
           </div>
         </div>

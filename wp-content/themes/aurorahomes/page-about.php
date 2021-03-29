@@ -1,21 +1,21 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-[650px] xl:h-[950px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
+    <div class="relative h-[650px] xl:h-[750px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-right" data-aos-once="true" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase">
+            <p class="font-foco-black text-[70px] xl:text-[90px] leading-[80px] xl:leading-[100px] text-white uppercase">
                 Prioritising</p>
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase pb-[30px]">
+            <p class="font-foco-black text-[70px] xl:text-[90px] leading-[80px] xl:leading-[100px] text-white uppercase pb-[30px]">
                 Your Needs</p>
             <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                 Contact Us
             </a>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4">
+    <div data-aos="fade-up" data-aos-once="true" data-aos-offset="-100" class="container mx-auto mb-[100px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-7 flex flex-col justify-center">
                 <p class="font-foco-black text-[60px] leading-[65px] text-aurora-blue-03">AURORA PROMISES</p>
@@ -145,11 +145,11 @@ get_header();
                 <img class="object-contain my-[15px]" src="<?php echo get_theme_file_uri( '/images/logo.png' ); ?>" alt="">
             </div>
             <div class="col-span-12 xl:col-span-6 flex flex-col pr-[50px]">
-                <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[15px]">We are always looking to form new
+                <p class="font-foco-light text-[24px] text-aurora-grey-02 pb-[15px]">We are always looking to form new
                     partnerships and connections within the industry here in New Zealand.</p>
-                <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[15px]">Want to join our network? Get in
+                <p class="font-foco-light text-[24px] text-aurora-grey-02 pb-[15px]">Want to join our network? Get in
                     touch today via our contact form or give us a call.</p>
-                <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[50px]">We look forward to working with
+                <p class="font-foco-light text-[24px] text-aurora-grey-02 pb-[50px]">We look forward to working with
                     you!</p>
                 <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-red-01 border-[5px] border-aurora-red-01 rounded-full py-[5px] px-[30px] mb-[50px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02 self-start" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                     Contact Us

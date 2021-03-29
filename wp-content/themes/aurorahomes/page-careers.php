@@ -1,21 +1,21 @@
 <?php
 get_header();
 ?>
-    <div class="relative h-[650px] xl:h-[950px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
+    <div class="relative h-[650px] xl:h-[750px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat" style="background-image: url('<?php echo get_theme_file_uri( '/images/workers_resized.jpg' ); ?>');">
         <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
         <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
         </div>
         <div data-aos="fade-right" data-aos-once="true" class="absolute inset-0 container mx-auto px-4 flex flex-col justify-center z-40">
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase">
+            <p class="font-foco-black text-[70px] xl:text-[90px] leading-[80px] xl:leading-[100px] text-white uppercase">
                 Looking To</p>
-            <p class="font-foco-black text-[70px] xl:text-[100px] leading-[80px] xl:leading-[110px] text-white uppercase pb-[30px]">
+            <p class="font-foco-black text-[70px] xl:text-[90px] leading-[80px] xl:leading-[100px] text-white uppercase pb-[30px]">
                 Your Future</p>
             <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-03 border-[5px] border-aurora-blue-03 rounded-full py-[5px] px-[30px] self-start transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-blue-02" href="<?php echo get_permalink( get_page_by_title( 'Contact' ) ); ?>">
                 Contact Us
             </a>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4">
+    <div data-aos="fade-up" data-aos-once="true" data-aos-offset="-100" class="container mx-auto mb-[100px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-6">
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Interested in Construction & Development</p>
@@ -187,7 +187,7 @@ get_header();
 		    ?>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto px-4">
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto py-[30px] px-4">
         <div class="grid grid-cols-12">
             <div class="col-span-12 text-right">
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Have Questions?</p>
