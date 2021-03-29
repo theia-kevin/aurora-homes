@@ -210,6 +210,8 @@ get_header();
                 <?php
                 $projects = new WP_Query( [
                     'post_type' => 'project',
+                    'orderby' => 'ID',
+                    'order' => 'ASC',
                     'tax_query' => [
                         'relation' => 'OR',
                         [

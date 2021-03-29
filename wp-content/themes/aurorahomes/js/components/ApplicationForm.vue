@@ -1,107 +1,101 @@
 <template>
   <div>
-    <div class="mb-8">
-      <a class="bg-aurora-blue-04 px-8 py-2 rounded-full font-light text-white" href="/careers">Back to Job Listings</a>
+
+    <div class="mb-[100px]">
+      <div class="flex flex-wrap items-center justify-between mb-[30px]">
+        <div class="mb-[15px]">
+          <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">{{ listing.post_title }}</p>
+          <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase">{{ listing.post_location }}</p>
+        </div>
+        <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01" :href="previous_url">Back to Job Listings</a>
+      </div>
+      <div class="font-foco-light text-[16px] text-aurora-grey-02" v-html="listing.post_description"></div>
     </div>
-    <p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase">{{ listing.post_title }}</p>
-    <p class="font-black leading-tight text-2xl text-aurora-blue-03 uppercase mb-8">{{ listing.post_location }}</p>
-    <div class="mb-16" v-html="listing.post_description"></div>
-    <p class="font-black leading-tight text-4xl text-aurora-blue-04 uppercase border-b border-black pb-4 mb-8">Apply For
-      This Position</p>
+    <p class="font-foco-black text-[36px] text-aurora-blue-04 uppercase border-b border-aurora-grey-01 mb-[30px]">Apply For This Position</p>
     <ValidationObserver ref="formObserver">
       <form v-on:submit.prevent="onSubmit">
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-12 2xl:col-span-6">
+        <div class="grid grid-cols-12" style="gap: 30px">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="first_name" type="text" placeholder="First Name*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="last_name" type="text" placeholder="Last Name*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="email" type="email" placeholder="Email*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="phone" type="text" placeholder="Phone*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="address" type="text" placeholder="Address*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="city" type="text" placeholder="City*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <input v-model="postal_code" type="text" placeholder="Postal Code*">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-6">
+          <div class="col-span-12 xl:col-span-6">
             <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
               <select v-model="country">
                 <option value="" selected disabled>Country*</option>
                 <option value="New Zealand">New Zealand</option>
                 <option value="Australia">Australia</option>
               </select>
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
+              <small>{{ errors[0] }}</small>
             </ValidationProvider>
           </div>
-        </div>
-        <div class="border-b border-black py-4 my-8"></div>
-        <div class="grid grid-cols-12 grid-rows-3 gap-8">
-          <div class="col-span-12 2xl:col-span-3 row-start-1">
-            <ValidationProvider rules="resumeRequired" v-slot="{ errors, validate }">
-              <label>Resume*</label>
+          <div class="col-span-12 xl:col-span-6">
+            <input v-model="website" type="text" placeholder="Website, Blog, or Portfolio (optional)">
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <input v-model="profile_url" type="text" placeholder="Linkedin Profile URL (optional)">
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <ValidationProvider v-slot="{ errors }">
+              <datepicker v-model="date_available" :format="formatDateAvailable" placeholder="Date Available (optional)"></datepicker>
+              <small>{{ errors[0] }}</small>
+            </ValidationProvider>
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <ValidationProvider v-slot="{ errors }">
+              <input v-model="desired_pay" type="text" placeholder="Desired Pay (optional)">
+              <small>{{ errors[0] }}</small>
+            </ValidationProvider>
+          </div>
+          <div class="col-span-12">
+            <ValidationProvider v-slot="{ errors, validate }">
+              <label class="block font-foco-light text-[18px] pb-[15px]">Resume (optional):</label>
               <input type="file" v-if="resumeFieldEnabled" v-on:change="handleResume($event) || validate($event)">
               <div>
-                <small class="text-aurora-red-01">{{ errors[0] }}</small>
+                <small>{{ errors[0] }}</small>
               </div>
             </ValidationProvider>
           </div>
-          <div class="col-span-12 2xl:col-span-3 row-start-2">
-            <ValidationProvider rules="dateAvailableRequired" v-slot="{ errors }">
-              <label>Date Available*</label>
-              <datepicker v-model="date_available" :format="formatDateAvailable"></datepicker>
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
-            </ValidationProvider>
-          </div>
-          <div class="col-span-12 2xl:col-span-3 row-start-3">
-            <ValidationProvider rules="fieldRequired" v-slot="{ errors }">
-              <label>Desired Pay*</label>
-              <input v-model="desired_pay" type="text">
-              <small class="text-aurora-red-01">{{ errors[0] }}</small>
-            </ValidationProvider>
-          </div>
-        </div>
-        <div class="border-b border-black py-4 my-8"></div>
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-12 2xl:col-span-6">
-            <input v-model="website" type="text" placeholder="Website, Blog, or Portfolio">
-          </div>
-          <div class="col-span-12 2xl:col-span-6">
-            <input v-model="profile_url" type="text" placeholder="Linkedin Profile URL">
-          </div>
-        </div>
-        <div class="grid grid-cols-12">
-          <div class="col-span-12 my-8 flex justify-end">
-            <input class="ml-auto bg-aurora-blue-04 px-8 py-2 rounded-full font-light text-white" type="submit" value="Submit Application">
+          <div class="col-span-12 flex item-center justify-end py-[30px]">
+            <input class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01" type="submit" value="Submit Application">
           </div>
         </div>
       </form>
@@ -223,12 +217,14 @@ export default {
 </script>
 <style lang="scss">
 input[type="text"], input[type="email"], input[type="number"], select, textarea {
-  @apply border border-aurora-grey-01 bg-white py-3 px-4 w-full;
-  line-height: 0;
+  @apply w-full;
 }
 
-label {
-  display: block;
-  color: #9ca3af;
+input[type="text"], input[type="email"], input[type="number"], select, textarea, label {
+  @apply font-foco-light text-[16px];
+}
+
+small {
+  @apply font-foco-light text-[16px] text-aurora-red-01;
 }
 </style>

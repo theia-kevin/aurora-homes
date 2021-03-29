@@ -16,7 +16,7 @@ if ( is_page( 'Services' ) ) {
 	$background_position = 'bg-left-bottom';
 }
 
-if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) ) || is_page( 'Apply' ) ) {
+if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) ) || is_page( 'Apply' ) || ( is_single() && ( get_post_type() == 'listing' ) )) {
 	$background          = get_theme_file_uri( '/images/AdobeStock_322912716 copy.jpg' );
 	$background_position = 'bg-left-bottom';
 }

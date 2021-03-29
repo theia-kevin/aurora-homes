@@ -1,20 +1,20 @@
 <?php
 get_header();
 ?>
-	<div class="relative h-4/6 lg:h-96 mb-24 bg-cover bg-no-repeat bg-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/m8DVH7.png' ); ?>');">
-		<div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
-		<div class="absolute w-full bottom-0 bg-cover bg-no-repeat z-40" style="height: 220px; background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
-		</div>
-	</div>
-	<div class="container mx-auto px-4 lg:px-0 mb-24 lg:mb-48">
-		<div>
-			<div class="mb-8">
-				<a class="bg-aurora-blue-04 px-8 py-2 rounded-full font-light text-white" href="<?php echo get_permalink( get_page_by_title( 'Careers' ) ); ?>">Back to Job Listings</a>
-			</div>
-			<p class="font-black leading-tight text-5xl text-aurora-blue-04 uppercase"><?php the_title(); ?></p>
-			<p class="font-black leading-tight text-2xl text-aurora-blue-03 uppercase mb-8"><?php the_field( 'location' ); ?></p>
-			<div class="mb-16"><?php the_field( 'description' ); ?></div>
-		</div>
+    <div class="relative h-[250px] xl:h-[350px] mb-[50px] xl:mb-[100px] bg-cover bg-no-repeat bg-left-bottom" style="background-image: url('<?php echo get_theme_file_uri( '/images/m8DVH7.png' ); ?>');">
+        <div class="absolute inset-0 bg-aurora-blue-02 bg-opacity-50"></div>
+        <div class="absolute h-[220px] w-full bottom-0 bg-cover bg-no-repeat z-40" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 4.svg' ); ?>');">
+        </div>
+    </div>
+	<div class="container mx-auto mb-[100px] px-4">
+        <div class="flex flex-wrap items-center justify-between mb-[30px]">
+            <div class="mb-[15px]">
+                <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase"><?php the_title(); ?></p>
+                <p class="font-foco-bold text-[24px] text-aurora-blue-03 uppercase"><?php the_field( 'location' ); ?></p>
+            </div>
+            <a class="inline-block font-foco-light text-[16px] text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full py-[5px] px-[30px] transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01" href="<?php echo get_permalink( get_page_by_title( 'Careers' ) ); ?>">Back to Job Listings</a>
+        </div>
+        <div class="font-foco-light text-[16px] text-aurora-grey-02"><?php the_field( 'description' ); ?></div>
 	</div>
 <?php
 get_footer();

@@ -254,11 +254,15 @@ function aurora_send_application() {
 	$subject = 'Job Application';
 	$headers = '';
 
-	require_once( ABSPATH . 'wp-admin/includes/image.php' );
-	require_once( ABSPATH . 'wp-admin/includes/file.php' );
-	require_once( ABSPATH . 'wp-admin/includes/media.php' );
-	$attachment_id = media_handle_upload( 'resume', 0 );
-	$attachments  = [wp_get_attachment_url($attachment_id)];
+	if ($_POST['resume']) {
+		require_once( ABSPATH . 'wp-admin/includes/image.php' );
+		require_once( ABSPATH . 'wp-admin/includes/file.php' );
+		require_once( ABSPATH . 'wp-admin/includes/media.php' );
+		$attachment_id = media_handle_upload( 'resume', 0 );
+		$attachments  = [wp_get_attachment_url($attachment_id)];
+	} else {
+		$attachments = [];
+	}
 
 	ob_start();
 
@@ -271,12 +275,27 @@ function aurora_send_application() {
         <p>City: ' . $_POST["city"] . '</p>
         <p>Postal Code: ' . $_POST["postal_code"] . '</p>
         <p>Country: ' . $_POST["country"] . '</p>
-        <p>Resume: ' . '*read attachment' . '</p>
-        <p>Date Available: ' . $_POST["date_available"] . '</p>
-        <p>Desired Pay: ' . $_POST["desired_pay"] . '</p>
-        <p>Website: ' . $_POST["website"] . '</p>
-        <p>Profile URL: ' . $_POST["profile_url"] . '</p>
         ';
+
+	if ($_POST["website"]) {
+		echo '<p>Website: ' . $_POST["website"] . '</p>';
+	}
+
+	if ($_POST["profile_url"]) {
+		echo '<p>Profile URL: ' . $_POST["profile_url"] . '</p>';
+	}
+
+	if ($_POST["date_available"] != "Invalid date") {
+		echo '<p>Date Available: ' . $_POST["date_available"] . '</p>';
+	}
+
+	if ($_POST["desired_pay"]) {
+		echo '<p>Desired Pay: ' . $_POST["desired_pay"] . '</p>';
+	}
+
+	if ($_POST["resume"]) {
+		echo '<p>Resume: ' . '*read attachment' . '</p>';
+	}
 
 	$message = ob_get_contents();
 	ob_end_clean();
