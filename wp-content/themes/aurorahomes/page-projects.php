@@ -27,6 +27,8 @@ get_header();
 				<?php
 				$completed_projects = new WP_Query( [
 					'post_type' => 'project',
+					'orderby' => 'ID',
+					'order' => 'ASC',
 					'tax_query' => [
 						[
 							'taxonomy' => 'project_status',
@@ -69,6 +71,8 @@ get_header();
 	        <?php
 	        $wip_projects = new WP_Query( [
 		        'post_type' => 'project',
+		        'orderby' => 'ID',
+		        'order' => 'ASC',
 		        'tax_query' => [
 			        [
 				        'taxonomy' => 'project_status',

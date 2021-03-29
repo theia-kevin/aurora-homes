@@ -193,13 +193,13 @@ get_header();
                 </div>
             </div>
             <div class="inline-flex flex-no-wrap pb-[60px]">
-                <div class="swiper-prev w-[64px] h-[64px] flex items-center justify-center text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full cursor-pointer outline-none transition-all duration-300 hover:text-aurora-yellow-01 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01 mr-[15px]">
-                    <svg class="w-[32px] h-[32px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="swiper-prev w-[40px] h-[40px] flex items-center justify-center text-white bg-aurora-blue-02 bg-opacity-80 rounded-full cursor-pointer outline-none transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner mr-[15px]">
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </div>
-                <div class="swiper-next w-[64px] h-[64px] flex items-center justify-center text-white bg-aurora-blue-02 border-[5px] border-aurora-blue-02 rounded-full cursor-pointer outline-none transition-all duration-300 hover:text-aurora-yellow-01 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner hover:border-aurora-yellow-01">
-                    <svg class="w-[32px] h-[32px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="swiper-next w-[40px] h-[40px] flex items-center justify-center text-white bg-aurora-blue-02 bg-opacity-80 rounded-full cursor-pointer outline-none transition-all duration-300 hover:transform hover:translate-y-1 hover:-translate-x-1 hover:shadow-inner">
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
                 </div>
