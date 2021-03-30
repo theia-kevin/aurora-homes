@@ -254,7 +254,7 @@ function aurora_send_application() {
 	$subject = 'Job Application';
 	$headers = '';
 
-	if ($_POST['resume']) {
+	if (count($_FILES)) {
 		require_once( ABSPATH . 'wp-admin/includes/image.php' );
 		require_once( ABSPATH . 'wp-admin/includes/file.php' );
 		require_once( ABSPATH . 'wp-admin/includes/media.php' );
