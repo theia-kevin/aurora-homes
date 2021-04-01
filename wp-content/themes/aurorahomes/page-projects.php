@@ -56,7 +56,7 @@ get_header();
 				?>
             </div>
         </div>
-        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-30 h-[500px]" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
+        <div class="absolute bottom-0 w-full bg-cover bg-no-repeat z-[-1] h-[500px]" style="background-image: url('<?php echo get_theme_file_uri( '/images/Asset 2.svg' ); ?>');">
         </div>
     </div>
     <div id="wip" data-aos="fade-up" data-aos-once="true" class="container mx-auto mb-[100px] px-4 relative z-40">
