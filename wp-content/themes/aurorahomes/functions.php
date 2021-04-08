@@ -318,3 +318,26 @@ function aurora_send_application_content_type() {
 add_action('wp_ajax_aurora_send_application', 'aurora_send_application');
 add_action('wp_ajax_nopriv_aurora_send_application', 'aurora_send_application');
 add_filter('wp_mail_content_type','aurora_send_application_content_type' );
+
+function enqueueLoginScripts() {
+	?>
+	<style type="text/css">
+        body {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/admin-bg.jpg) !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: bottom left !important;
+        }
+
+        #login h1 a {
+            background-color: #ffffff;
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/admin-logo.png) !important;
+            background-size: auto;
+            margin: 0;
+            width: 100%;
+        }
+	</style>
+	<?php
+}
+
+add_action( 'login_enqueue_scripts', 'enqueueLoginScripts' );
