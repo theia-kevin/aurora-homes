@@ -131,6 +131,13 @@ if ($next_post_link == get_permalink()) {
         </div>
     </div>
     <div class="container mx-auto px-4" data-aos="fade-up" data-aos-once="true">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 flex flex-wrap items-center justify-between">
+                <div class="mb-[15px]">
+                    <p class="font-foco-black text-[48px] leading-[58px] text-aurora-blue-04 uppercase">Interiors</p>
+                </div>
+            </div>
+        </div>
         <div class="swiper-lightbox">
             <div class="grid grid-cols-12 gap-[15px] xl:gap-[15px]">
 	            <?php

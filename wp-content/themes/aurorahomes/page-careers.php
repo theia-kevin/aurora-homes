@@ -29,7 +29,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto px-4">
+    <div data-aos="fade-up" data-aos-once="true" class="container mx-auto px-4 hidden">
         <div class="grid grid-cols-12 mb-[50px]">
             <div class="col-span-3 xl:col-span-1 flex justify-end">
                 <div class="relative inline-block self-start">
@@ -188,7 +188,7 @@ get_header();
         </div>
     </div>
     <div data-aos="fade-up" data-aos-once="true" class="container mx-auto py-[30px] px-4">
-        <div class="grid grid-cols-12">
+        <div class="grid grid-cols-12 hidden">
             <div class="col-span-12 text-right">
                 <p class="font-foco-black text-[50px] leading-[60px] text-aurora-blue-04 uppercase">Have Questions?</p>
             </div>
