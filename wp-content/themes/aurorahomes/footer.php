@@ -48,7 +48,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
             <div class="col-span-12 xl:col-span-4 flex flex-col mb-4 xl:mb-0">
                 <p class="font-foco-bold text-[21px] text-white mb-4">Contact</p>
                 <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="mailto:info@auroradevelopment.co.nz">Email:
-                    info@auroradevelopment.co.nz</a>
+                    info@auroradevelopments.co.nz</a>
                 <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="tel:6421806699">Phone:
                     +64 (0)9 836 9999</a>
                 <p class="inline-block font-foco-regular text-[18px] text-white mb-4">
