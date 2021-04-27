@@ -31,9 +31,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
                 <a class="block mb-4 xl:mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img class="object-contain h-[50px]" src="<?php echo get_theme_file_uri( '/images/cropped-cropped-Asset-1-2.png' ); ?>" alt="">
                 </a>
-                <p class="font-foco-regular text-[16px] text-white mb-4 xl:mb-0">© COPYRIGHT 2020-2021 AURORA HOMES
-                    LIMITED. ALL RIGHTS
-                    RESERVED.</p>
+                <p class="font-foco-regular text-[16px] text-white mb-4 xl:mb-0">© Copyright 2020-2021 Aurora Developments Limited. All Rights Reserved.</p>
             </div>
             <div class="col-span-12 xl:col-span-3 flex flex-col">
                 <p class="font-foco-bold text-[21px] text-white mb-4">Links</p>
@@ -52,7 +50,7 @@ if ( is_page( 'Projects' ) || ( is_single() && ( get_post_type() == 'project' ) 
                 <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="mailto:info@auroradevelopment.co.nz">Email:
                     info@auroradevelopment.co.nz</a>
                 <a class="inline-block font-foco-regular text-[18px] text-white transition-all duration-300 hover:text-aurora-blue-03" href="tel:6421806699">Phone:
-                    +64 (0)21 806 699</a>
+                    +64 (0)9 836 9999</a>
                 <p class="inline-block font-foco-regular text-[18px] text-white mb-4">
                     Office: 118 Lincoln Road,
                     Henderson,

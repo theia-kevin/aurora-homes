@@ -17,7 +17,7 @@ get_header();
                 <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[30px]">118 Lincoln Road</p>
                 <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[30px]">Henderson</p>
                 <p class="font-foco-regular text-[24px] text-aurora-grey-02">Email: info@auroradevelopment.co.nz</p>
-                <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[15px]">Phone: +64 (0)21 806 699</p>
+                <p class="font-foco-regular text-[24px] text-aurora-grey-02 pb-[15px]">Phone: +64 (0)9 836 9999</p>
                 <div class="flex mb-[50px]">
                     <a class="inline-block mr-[30px]" href="#">
                         <img class="object-contain" src="<?php echo get_theme_file_uri( '/images/Group 216.png' ); ?>" alt="">
